@@ -1,4 +1,4 @@
-# %Replace this with your first and last name%
+# Samuel Fafel
 
 # Course Setup 
 
@@ -10,7 +10,7 @@
 
 Once you have a github account
 1. Go to https://github.com/EndlessDebugger/420_template
-2. Click "Use Template -> Create a new repository" (use the name: CSCE420-`Your netid here` [not UIN])
+2. Click "Use Template -> Create a new repository" (use the name: CSCE420-samuel.fafel [not UIN])
 3. Make sure to make the repository private
 4. Go to settings, Collaborators, Add people, and add `ioerger`, and `EndlessDebugger`
 
