@@ -5,67 +5,60 @@ G
 
 CEHI
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=-10, f(n)=g(n)+h(n)=-9
-ADFJ
-B
-G
+move 1, pathcost=1, heuristic=-2, f(n)=g(n)+h(n)=-1
+ADF
+BJ
 
+G
 CEHI
 >>>>>>>>>>
-move 2, pathcost=2, heuristic=-12, f(n)=g(n)+h(n)=-10
+move 2, pathcost=2, heuristic=-3, f(n)=g(n)+h(n)=-1
 ADFJ
 B
-GI
-
-CEH
->>>>>>>>>>
-move 3, pathcost=3, heuristic=-12, f(n)=g(n)+h(n)=-9
-ADFJ
-B
-GI
-H
-CE
->>>>>>>>>>
-move 4, pathcost=4, heuristic=-14, f(n)=g(n)+h(n)=-10
-ADFJE
-B
-GI
-H
-C
->>>>>>>>>>
-move 5, pathcost=5, heuristic=-16, f(n)=g(n)+h(n)=-11
-ADFJE
-
-GI
-H
-CB
->>>>>>>>>>
-move 6, pathcost=6, heuristic=-14, f(n)=g(n)+h(n)=-8
-ADFJE
 
 G
-H
-CBI
+CEHI
 >>>>>>>>>>
-move 7, pathcost=7, heuristic=-16, f(n)=g(n)+h(n)=-9
-ADFJEG
+move 3, pathcost=3, heuristic=-3, f(n)=g(n)+h(n)=0
+ADFJ
+BI
 
-
-H
-CBI
+G
+CEH
 >>>>>>>>>>
-move 8, pathcost=8, heuristic=-18, f(n)=g(n)+h(n)=-10
-ADFJEG
-
+move 4, pathcost=4, heuristic=-4, f(n)=g(n)+h(n)=0
+ADFJ
+BI
 H
-
-CBI
+G
+CE
 >>>>>>>>>>
-move 9, pathcost=9, heuristic=-20, f(n)=g(n)+h(n)=-11
+move 5, pathcost=5, heuristic=-7, f(n)=g(n)+h(n)=-2
+ADFJE
+BI
+H
+G
+C
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=-8, f(n)=g(n)+h(n)=-2
+ADFJE
+B
+HI
+G
+C
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-9, f(n)=g(n)+h(n)=-2
+ADFJE
+
+HI
+G
+CB
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-10, f(n)=g(n)+h(n)=-2
 ADFJEG
 
 HI
 
 CB
 >>>>>>>>>>
-statistics: probB08.bwp heuristic H4 planlen 9 iter 104 maxq 789
+statistics: probB08.bwp heuristic H4 planlen 8 iter 19 maxq 186

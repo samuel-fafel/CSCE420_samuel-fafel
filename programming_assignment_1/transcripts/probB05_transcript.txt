@@ -5,39 +5,39 @@ D
 GHIJ
 B
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=-12, f(n)=g(n)+h(n)=-11
+move 1, pathcost=1, heuristic=-4, f(n)=g(n)+h(n)=-3
 AE
 CF
 DJ
 GHI
 B
 >>>>>>>>>>
-move 2, pathcost=2, heuristic=-14, f(n)=g(n)+h(n)=-12
+move 2, pathcost=2, heuristic=-7, f(n)=g(n)+h(n)=-5
 AE
-CFI
-DJ
-GH
-B
+CF
+DJB
+GHI
+
 >>>>>>>>>>
-move 3, pathcost=3, heuristic=-16, f(n)=g(n)+h(n)=-13
+move 3, pathcost=3, heuristic=-8, f(n)=g(n)+h(n)=-5
 AE
 CFI
 DJB
 GH
 
 >>>>>>>>>>
-move 4, pathcost=4, heuristic=-18, f(n)=g(n)+h(n)=-14
+move 4, pathcost=4, heuristic=-9, f(n)=g(n)+h(n)=-5
 AE
 CFI
 DJB
 G
 H
 >>>>>>>>>>
-move 5, pathcost=5, heuristic=-20, f(n)=g(n)+h(n)=-15
+move 5, pathcost=5, heuristic=-10, f(n)=g(n)+h(n)=-5
 AEG
 CFI
 DJB
 
 H
 >>>>>>>>>>
-statistics: probB05.bwp heuristic H4 planlen 5 iter 5 maxq 75
+statistics: probB05.bwp heuristic H4 planlen 5 iter 6 maxq 82

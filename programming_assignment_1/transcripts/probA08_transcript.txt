@@ -3,44 +3,54 @@ BC
 
 ADE
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=0, f(n)=g(n)+h(n)=1
-B
+move 1, pathcost=1, heuristic=4, f(n)=g(n)+h(n)=5
+BCE
 
-ADEC
->>>>>>>>>>
-move 2, pathcost=2, heuristic=-2, f(n)=g(n)+h(n)=0
-
-B
-ADEC
->>>>>>>>>>
-move 3, pathcost=3, heuristic=-2, f(n)=g(n)+h(n)=1
-C
-B
-ADE
->>>>>>>>>>
-move 4, pathcost=4, heuristic=-2, f(n)=g(n)+h(n)=2
-CE
-B
 AD
 >>>>>>>>>>
-move 5, pathcost=5, heuristic=-4, f(n)=g(n)+h(n)=1
-CE
-BD
+move 2, pathcost=2, heuristic=4, f(n)=g(n)+h(n)=6
+BCE
+D
 A
 >>>>>>>>>>
-move 6, pathcost=6, heuristic=-6, f(n)=g(n)+h(n)=0
-CE
-BDA
+move 3, pathcost=3, heuristic=4, f(n)=g(n)+h(n)=7
+BCE
+DA
 
 >>>>>>>>>>
-move 7, pathcost=7, heuristic=-8, f(n)=g(n)+h(n)=-1
-C
-BDA
+move 4, pathcost=4, heuristic=3, f(n)=g(n)+h(n)=7
+BC
+DA
 E
 >>>>>>>>>>
-move 8, pathcost=8, heuristic=-10, f(n)=g(n)+h(n)=-2
+move 5, pathcost=5, heuristic=2, f(n)=g(n)+h(n)=7
+B
+DA
+EC
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=0, f(n)=g(n)+h(n)=6
+B
+D
+ECA
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-2, f(n)=g(n)+h(n)=5
+B
+
+ECAD
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-3, f(n)=g(n)+h(n)=5
+
+B
+ECAD
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-4, f(n)=g(n)+h(n)=5
+
+BD
+ECA
+>>>>>>>>>>
+move 10, pathcost=10, heuristic=-5, f(n)=g(n)+h(n)=5
 
 BDA
 EC
 >>>>>>>>>>
-statistics: probA08.bwp heuristic H4 planlen 8 iter 31 maxq 54
+statistics: probA08.bwp heuristic H4 planlen 10 iter 77 maxq 91

@@ -5,95 +5,102 @@ A
 CG
 J
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=-4, f(n)=g(n)+h(n)=-3
+move 1, pathcost=1, heuristic=2, f(n)=g(n)+h(n)=3
 BEFI
 D
 A
 CG
 JH
 >>>>>>>>>>
-move 2, pathcost=2, heuristic=-6, f(n)=g(n)+h(n)=-4
+move 2, pathcost=2, heuristic=1, f(n)=g(n)+h(n)=3
 BEFI
 D
 
 CG
 JHA
 >>>>>>>>>>
-move 3, pathcost=3, heuristic=-6, f(n)=g(n)+h(n)=-3
+move 3, pathcost=3, heuristic=-1, f(n)=g(n)+h(n)=2
+BEFI
+D
+G
+C
+JHA
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-1, f(n)=g(n)+h(n)=3
 BEF
 D
-I
-CG
+GI
+C
 JHA
 >>>>>>>>>>
-move 4, pathcost=4, heuristic=-6, f(n)=g(n)+h(n)=-2
+move 5, pathcost=5, heuristic=-1, f(n)=g(n)+h(n)=4
 BE
 D
-IF
-CG
+GIF
+C
 JHA
 >>>>>>>>>>
-move 5, pathcost=5, heuristic=-6, f(n)=g(n)+h(n)=-1
-B
+move 6, pathcost=6, heuristic=-3, f(n)=g(n)+h(n)=3
+BE
 D
-IFE
-CG
-JHA
->>>>>>>>>>
-move 6, pathcost=6, heuristic=-8, f(n)=g(n)+h(n)=-2
+GIFC
 
+JHA
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-4, f(n)=g(n)+h(n)=3
+BE
+
+GIFC
 D
-IFE
-CG
+JHA
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-4, f(n)=g(n)+h(n)=4
+B
+E
+GIFC
+D
+JHA
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-5, f(n)=g(n)+h(n)=4
+
+E
+GIFC
+D
 JHAB
 >>>>>>>>>>
-move 7, pathcost=7, heuristic=-10, f(n)=g(n)+h(n)=-3
+move 10, pathcost=10, heuristic=-6, f(n)=g(n)+h(n)=4
 
+
+GIFC
 D
-IF
-CG
 JHABE
 >>>>>>>>>>
-move 8, pathcost=8, heuristic=-12, f(n)=g(n)+h(n)=-4
+move 11, pathcost=11, heuristic=-7, f(n)=g(n)+h(n)=4
 
-D
-I
-CG
+
+GIF
+DC
+JHABE
+>>>>>>>>>>
+move 12, pathcost=12, heuristic=-8, f(n)=g(n)+h(n)=4
+
+
+GI
+DC
 JHABEF
 >>>>>>>>>>
-move 9, pathcost=9, heuristic=-14, f(n)=g(n)+h(n)=-5
+move 13, pathcost=13, heuristic=-9, f(n)=g(n)+h(n)=4
 
-D
 
-CG
+G
+DC
 JHABEFI
 >>>>>>>>>>
-move 10, pathcost=10, heuristic=-16, f(n)=g(n)+h(n)=-6
-
-D
-
-C
-JHABEFIG
->>>>>>>>>>
-move 11, pathcost=11, heuristic=-16, f(n)=g(n)+h(n)=-5
-C
-D
-
-
-JHABEFIG
->>>>>>>>>>
-move 12, pathcost=12, heuristic=-18, f(n)=g(n)+h(n)=-6
-C
-
-
-D
-JHABEFIG
->>>>>>>>>>
-move 13, pathcost=13, heuristic=-20, f(n)=g(n)+h(n)=-7
+move 14, pathcost=14, heuristic=-10, f(n)=g(n)+h(n)=4
 
 
 
 DC
 JHABEFIG
 >>>>>>>>>>
-statistics: probB13.bwp heuristic H4 planlen 13 iter 1109 maxq 6215
+statistics: probB13.bwp heuristic H4 planlen 14 iter 4412 maxq 30099

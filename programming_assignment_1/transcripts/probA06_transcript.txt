@@ -3,34 +3,34 @@ BC
 D
 AE
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=-2, f(n)=g(n)+h(n)=-1
+move 1, pathcost=1, heuristic=1, f(n)=g(n)+h(n)=2
 B
 DC
 AE
 >>>>>>>>>>
-move 2, pathcost=2, heuristic=-2, f(n)=g(n)+h(n)=0
+move 2, pathcost=2, heuristic=-1, f(n)=g(n)+h(n)=1
 B
 DCE
 A
 >>>>>>>>>>
-move 3, pathcost=3, heuristic=-4, f(n)=g(n)+h(n)=-1
+move 3, pathcost=3, heuristic=-2, f(n)=g(n)+h(n)=1
 
 DCE
 AB
 >>>>>>>>>>
-move 4, pathcost=4, heuristic=-6, f(n)=g(n)+h(n)=-2
+move 4, pathcost=4, heuristic=-3, f(n)=g(n)+h(n)=1
 
 DC
 ABE
 >>>>>>>>>>
-move 5, pathcost=5, heuristic=-8, f(n)=g(n)+h(n)=-3
+move 5, pathcost=5, heuristic=-4, f(n)=g(n)+h(n)=1
 
 D
 ABEC
 >>>>>>>>>>
-move 6, pathcost=6, heuristic=-10, f(n)=g(n)+h(n)=-4
+move 6, pathcost=6, heuristic=-5, f(n)=g(n)+h(n)=1
 
 
 ABECD
 >>>>>>>>>>
-statistics: probA06.bwp heuristic H4 planlen 6 iter 22 maxq 37
+statistics: probA06.bwp heuristic H4 planlen 6 iter 21 maxq 42

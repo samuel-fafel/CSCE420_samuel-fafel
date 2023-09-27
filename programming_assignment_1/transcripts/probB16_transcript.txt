@@ -5,123 +5,123 @@ FGJ
 CDEI
 
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=0, f(n)=g(n)+h(n)=1
-A
+move 1, pathcost=1, heuristic=8, f(n)=g(n)+h(n)=9
+
 BH
-FG
+FGJA
 CDEI
-J
->>>>>>>>>>
-move 2, pathcost=2, heuristic=-2, f(n)=g(n)+h(n)=0
-A
-BHG
-F
-CDEI
-J
->>>>>>>>>>
-move 3, pathcost=3, heuristic=-2, f(n)=g(n)+h(n)=1
-A
-BHG
 
-CDEI
-JF
 >>>>>>>>>>
-move 4, pathcost=4, heuristic=-4, f(n)=g(n)+h(n)=0
+move 2, pathcost=2, heuristic=6, f(n)=g(n)+h(n)=8
 
-BHG
-A
+B
+FGJA
 CDEI
-JF
+H
 >>>>>>>>>>
-move 5, pathcost=5, heuristic=-4, f(n)=g(n)+h(n)=1
+move 3, pathcost=3, heuristic=4, f(n)=g(n)+h(n)=7
 
-BHG
-A
+
+FGJAB
+CDEI
+H
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=4, f(n)=g(n)+h(n)=8
+
+
+FGJAB
 CDE
-JFI
+HI
 >>>>>>>>>>
-move 6, pathcost=6, heuristic=-4, f(n)=g(n)+h(n)=2
+move 5, pathcost=5, heuristic=4, f(n)=g(n)+h(n)=9
 
-BHG
-AE
+
+FGJAB
 CD
-JFI
+HIE
 >>>>>>>>>>
-move 7, pathcost=7, heuristic=-6, f(n)=g(n)+h(n)=1
+move 6, pathcost=6, heuristic=3, f(n)=g(n)+h(n)=9
 D
-BHG
-AE
-C
-JFI
->>>>>>>>>>
-move 8, pathcost=8, heuristic=-8, f(n)=g(n)+h(n)=0
-DI
-BHG
-AE
-C
-JF
->>>>>>>>>>
-move 9, pathcost=9, heuristic=-10, f(n)=g(n)+h(n)=-1
-DIF
-BHG
-AE
-C
-J
->>>>>>>>>>
-move 10, pathcost=10, heuristic=-8, f(n)=g(n)+h(n)=2
-DIF
-BH
-AEG
-C
-J
->>>>>>>>>>
-move 11, pathcost=11, heuristic=-10, f(n)=g(n)+h(n)=1
-DIFH
-B
-AEG
-C
-J
->>>>>>>>>>
-move 12, pathcost=12, heuristic=-10, f(n)=g(n)+h(n)=2
-DIFH
-B
-AEGC
 
-J
->>>>>>>>>>
-move 13, pathcost=13, heuristic=-12, f(n)=g(n)+h(n)=1
-DIFH
-
-AEGC
-B
-J
->>>>>>>>>>
-move 14, pathcost=14, heuristic=-14, f(n)=g(n)+h(n)=0
-DIFH
+FGJAB
 C
-AEG
-B
-J
+HIE
 >>>>>>>>>>
-move 15, pathcost=15, heuristic=-16, f(n)=g(n)+h(n)=-1
-DIFH
+move 7, pathcost=7, heuristic=0, f(n)=g(n)+h(n)=7
+D
+C
+FGJAB
+
+HIE
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-1, f(n)=g(n)+h(n)=7
+D
+C
+FGJA
+B
+HIE
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-1, f(n)=g(n)+h(n)=8
+D
+C
+FGJ
+BA
+HIE
+>>>>>>>>>>
+move 10, pathcost=10, heuristic=-2, f(n)=g(n)+h(n)=8
+D
 CJ
-AEG
-B
-
+FG
+BA
+HIE
 >>>>>>>>>>
-move 16, pathcost=16, heuristic=-18, f(n)=g(n)+h(n)=-2
-DIFH
+move 11, pathcost=11, heuristic=-3, f(n)=g(n)+h(n)=8
+D
 CJG
-AE
-B
-
+F
+BA
+HIE
 >>>>>>>>>>
-move 17, pathcost=17, heuristic=-20, f(n)=g(n)+h(n)=-3
+move 12, pathcost=12, heuristic=-5, f(n)=g(n)+h(n)=7
+D
+CJG
+
+BAF
+HIE
+>>>>>>>>>>
+move 13, pathcost=13, heuristic=-6, f(n)=g(n)+h(n)=7
+D
+CJGE
+
+BAF
+HI
+>>>>>>>>>>
+move 14, pathcost=14, heuristic=-7, f(n)=g(n)+h(n)=7
+DI
+CJGE
+
+BAF
+H
+>>>>>>>>>>
+move 15, pathcost=15, heuristic=-8, f(n)=g(n)+h(n)=7
+DIF
+CJGE
+
+BA
+H
+>>>>>>>>>>
+move 16, pathcost=16, heuristic=-9, f(n)=g(n)+h(n)=7
+DIF
+CJGE
+A
+B
+H
+>>>>>>>>>>
+move 17, pathcost=17, heuristic=-10, f(n)=g(n)+h(n)=7
 DIFH
 CJGE
 A
 B
 
 >>>>>>>>>>
-statistics: probB16.bwp heuristic H4 planlen 17 iter 68523 maxq 329510
+statistics: probB16.bwp heuristic H4 planlen 17 iter 83 maxq 633

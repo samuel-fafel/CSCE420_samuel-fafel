@@ -120,7 +120,7 @@ def heuristic_h3(node, goal):
     return heuristic_h1(node, goal) - node.g//2
 
 def heuristic_h4(node, goal):
-    # Greedy: Reward immediate closeness to solution
+    # Reward immediate closeness to solution
     current_stacks = node.state.stacks
     goal_stacks = goal.stacks
     
@@ -129,8 +129,9 @@ def heuristic_h4(node, goal):
         for i in range(min(len(current_stack), len(goal_stack))):
             # If block is in correct position and order, decrease heuristic_value
             if current_stack[i] == goal_stack[i]:
-                heuristic_value -= 2
-                
+                heuristic_value -= 1
+            else:
+                heuristic_value += 2
     return heuristic_value
 
 def a_star(problem, heuristic, maxiters):
@@ -209,8 +210,8 @@ if __name__ == "__main__": # Load & Solve Problem
     filename = sys.argv[1]
     problem = load_problem(filename)
     
-    heuristic = heuristic_h0
-    heuristic_name = "H0"
+    heuristic = heuristic_h4
+    heuristic_name = "H4"
     if "-H" in sys.argv:
         heuristic_flag_index = sys.argv.index("-H")
         heuristic_name = sys.argv[heuristic_flag_index + 1]
@@ -226,7 +227,7 @@ if __name__ == "__main__": # Load & Solve Problem
             case "H4":
                 heuristic = heuristic_h4
             case _:
-                heuristic = heuristic_h0
+                heuristic = heuristic_h4
     
     maxiters = 100000
     if "-M" in sys.argv:

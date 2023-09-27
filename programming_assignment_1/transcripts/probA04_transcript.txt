@@ -3,24 +3,24 @@ A
 DE
 BC
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=-6, f(n)=g(n)+h(n)=-5
+move 1, pathcost=1, heuristic=-3, f(n)=g(n)+h(n)=-2
 
 DEA
 BC
 >>>>>>>>>>
-move 2, pathcost=2, heuristic=-6, f(n)=g(n)+h(n)=-4
+move 2, pathcost=2, heuristic=-3, f(n)=g(n)+h(n)=-1
 
 DEAC
 B
 >>>>>>>>>>
-move 3, pathcost=3, heuristic=-8, f(n)=g(n)+h(n)=-5
+move 3, pathcost=3, heuristic=-4, f(n)=g(n)+h(n)=-1
 B
 DEAC
 
 >>>>>>>>>>
-move 4, pathcost=4, heuristic=-10, f(n)=g(n)+h(n)=-6
+move 4, pathcost=4, heuristic=-5, f(n)=g(n)+h(n)=-1
 BC
 DEA
 
 >>>>>>>>>>
-statistics: probA04.bwp heuristic H4 planlen 4 iter 6 maxq 15
+statistics: probA04.bwp heuristic H4 planlen 4 iter 5 maxq 10

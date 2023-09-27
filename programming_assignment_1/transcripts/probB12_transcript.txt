@@ -5,95 +5,88 @@ EG
 H
 AF
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=-4, f(n)=g(n)+h(n)=-3
+move 1, pathcost=1, heuristic=4, f(n)=g(n)+h(n)=5
 DIJ
-B
-EGC
-H
-AF
->>>>>>>>>>
-move 2, pathcost=2, heuristic=-6, f(n)=g(n)+h(n)=-4
-DIJ
+BCH
+EG
 
-EGC
-HB
 AF
 >>>>>>>>>>
-move 3, pathcost=3, heuristic=-6, f(n)=g(n)+h(n)=-3
-DIJ
-F
-EGC
-HB
+move 2, pathcost=2, heuristic=2, f(n)=g(n)+h(n)=4
+DIJG
+BCH
+E
+
+AF
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-1, f(n)=g(n)+h(n)=2
+DIJG
+BCH
+EF
+
 A
 >>>>>>>>>>
-move 4, pathcost=4, heuristic=-8, f(n)=g(n)+h(n)=-4
+move 4, pathcost=4, heuristic=-2, f(n)=g(n)+h(n)=2
 DIJ
-F
-EG
-HB
-AC
->>>>>>>>>>
-move 5, pathcost=5, heuristic=-8, f(n)=g(n)+h(n)=-3
-DIJG
-F
-E
-HB
-AC
->>>>>>>>>>
-move 6, pathcost=6, heuristic=-10, f(n)=g(n)+h(n)=-4
-DIJG
+BCH
+EFG
 
-EF
-HB
+A
+>>>>>>>>>>
+move 5, pathcost=5, heuristic=-2, f(n)=g(n)+h(n)=3
+DIJH
+BC
+EFG
+
+A
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=-3, f(n)=g(n)+h(n)=3
+DIJH
+B
+EFG
+
 AC
 >>>>>>>>>>
-move 7, pathcost=7, heuristic=-12, f(n)=g(n)+h(n)=-5
+move 7, pathcost=7, heuristic=-4, f(n)=g(n)+h(n)=3
+DIJ
+B
+EFG
+
+ACH
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-6, f(n)=g(n)+h(n)=2
 DIJ
 
 EFG
-HB
-AC
+
+ACHB
 >>>>>>>>>>
-move 8, pathcost=8, heuristic=-14, f(n)=g(n)+h(n)=-6
+move 9, pathcost=9, heuristic=-7, f(n)=g(n)+h(n)=2
 DI
 
 EFGJ
-HB
-AC
->>>>>>>>>>
-move 9, pathcost=9, heuristic=-12, f(n)=g(n)+h(n)=-3
-DI
 
-EFGJB
-H
-AC
+ACHB
 >>>>>>>>>>
-move 10, pathcost=10, heuristic=-14, f(n)=g(n)+h(n)=-4
-DI
-
-EFGJB
-
-ACH
->>>>>>>>>>
-move 11, pathcost=11, heuristic=-16, f(n)=g(n)+h(n)=-5
+move 10, pathcost=10, heuristic=-8, f(n)=g(n)+h(n)=2
 D
 
-EFGJB
+EFGJ
 I
-ACH
+ACHB
 >>>>>>>>>>
-move 12, pathcost=12, heuristic=-18, f(n)=g(n)+h(n)=-6
+move 11, pathcost=11, heuristic=-9, f(n)=g(n)+h(n)=2
 
 D
-EFGJB
+EFGJ
 I
-ACH
+ACHB
 >>>>>>>>>>
-move 13, pathcost=13, heuristic=-20, f(n)=g(n)+h(n)=-7
+move 12, pathcost=12, heuristic=-10, f(n)=g(n)+h(n)=2
 
 D
 EFGJ
 IB
 ACH
 >>>>>>>>>>
-statistics: probB12.bwp heuristic H4 planlen 13 iter 1073 maxq 8517
+statistics: probB12.bwp heuristic H4 planlen 12 iter 64 maxq 609

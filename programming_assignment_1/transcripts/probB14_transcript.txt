@@ -5,109 +5,116 @@ AGI
 BHJ
 E
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=-4, f(n)=g(n)+h(n)=-3
-CD
+move 1, pathcost=1, heuristic=5, f(n)=g(n)+h(n)=6
+CDF
 AGI
 
-BHJF
-E
->>>>>>>>>>
-move 2, pathcost=2, heuristic=-6, f(n)=g(n)+h(n)=-4
-C
-AGI
-D
-BHJF
-E
->>>>>>>>>>
-move 3, pathcost=3, heuristic=-4, f(n)=g(n)+h(n)=-1
-C
-AGI
-D
-BHJ
-EF
->>>>>>>>>>
-move 4, pathcost=4, heuristic=-6, f(n)=g(n)+h(n)=-2
-C
-AGI
-DJ
 BH
-EF
+EJ
 >>>>>>>>>>
-move 5, pathcost=5, heuristic=-8, f(n)=g(n)+h(n)=-3
-C
-AG
-DJI
-BH
-EF
->>>>>>>>>>
-move 6, pathcost=6, heuristic=-8, f(n)=g(n)+h(n)=-2
-C
-AG
-DJI
+move 2, pathcost=2, heuristic=3, f(n)=g(n)+h(n)=5
+CDF
+AGI
+
 B
-EFH
+EJH
 >>>>>>>>>>
-move 7, pathcost=7, heuristic=-8, f(n)=g(n)+h(n)=-1
-C
+move 3, pathcost=3, heuristic=3, f(n)=g(n)+h(n)=6
+CDF
 AG
-DJI
 
-EFHB
+B
+EJHI
 >>>>>>>>>>
-move 8, pathcost=8, heuristic=-10, f(n)=g(n)+h(n)=-2
-
-AG
-DJI
-C
-EFHB
->>>>>>>>>>
-move 9, pathcost=9, heuristic=-12, f(n)=g(n)+h(n)=-3
-
+move 4, pathcost=4, heuristic=1, f(n)=g(n)+h(n)=5
+CDF
 A
-DJI
-CG
-EFHB
->>>>>>>>>>
-move 10, pathcost=10, heuristic=-14, f(n)=g(n)+h(n)=-4
 
-AB
-DJI
-CG
-EFH
+B
+EJHIG
 >>>>>>>>>>
-move 11, pathcost=11, heuristic=-14, f(n)=g(n)+h(n)=-3
-H
+move 5, pathcost=5, heuristic=-2, f(n)=g(n)+h(n)=3
+CDF
 AB
-DJI
-CG
-EF
+
+
+EJHIG
 >>>>>>>>>>
-move 12, pathcost=12, heuristic=-14, f(n)=g(n)+h(n)=-2
-HF
-AB
-DJI
+move 6, pathcost=6, heuristic=-2, f(n)=g(n)+h(n)=4
+CD
+ABF
+
+
+EJHIG
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-3, f(n)=g(n)+h(n)=4
+C
+ABF
+D
+
+EJHIG
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-4, f(n)=g(n)+h(n)=4
+
+ABF
+D
+C
+EJHIG
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-5, f(n)=g(n)+h(n)=4
+
+ABF
+D
+CG
+EJHI
+>>>>>>>>>>
+move 10, pathcost=10, heuristic=-5, f(n)=g(n)+h(n)=5
+I
+ABF
+D
+CG
+EJH
+>>>>>>>>>>
+move 11, pathcost=11, heuristic=-5, f(n)=g(n)+h(n)=6
+IH
+ABF
+D
+CG
+EJ
+>>>>>>>>>>
+move 12, pathcost=12, heuristic=-6, f(n)=g(n)+h(n)=6
+IH
+ABF
+DJ
 CG
 E
 >>>>>>>>>>
-move 13, pathcost=13, heuristic=-16, f(n)=g(n)+h(n)=-3
-HF
-AB
-DJI
+move 13, pathcost=13, heuristic=-7, f(n)=g(n)+h(n)=6
+IH
+ABF
+DJ
 CGE
 
 >>>>>>>>>>
-move 14, pathcost=14, heuristic=-18, f(n)=g(n)+h(n)=-4
-H
+move 14, pathcost=14, heuristic=-8, f(n)=g(n)+h(n)=6
+IH
 AB
-DJI
+DJ
 CGEF
 
 >>>>>>>>>>
-move 15, pathcost=15, heuristic=-20, f(n)=g(n)+h(n)=-5
+move 15, pathcost=15, heuristic=-9, f(n)=g(n)+h(n)=6
+I
+AB
+DJ
+CGEFH
+
+>>>>>>>>>>
+move 16, pathcost=16, heuristic=-10, f(n)=g(n)+h(n)=6
 
 AB
 DJI
 CGEFH
 
 >>>>>>>>>>
-statistics: probB14.bwp heuristic H4 planlen 15 iter 1968 maxq 14645
+statistics: probB14.bwp heuristic H4 planlen 16 iter 1169 maxq 7602

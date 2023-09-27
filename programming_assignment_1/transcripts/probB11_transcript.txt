@@ -5,67 +5,74 @@ EJ
 BCHI
 ADG
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=-8, f(n)=g(n)+h(n)=-7
+move 1, pathcost=1, heuristic=2, f(n)=g(n)+h(n)=3
 I
 F
 EJ
 BCH
 ADG
 >>>>>>>>>>
-move 2, pathcost=2, heuristic=-10, f(n)=g(n)+h(n)=-8
-I
+move 2, pathcost=2, heuristic=0, f(n)=g(n)+h(n)=2
+IJ
+F
+E
+BCH
+ADG
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-2, f(n)=g(n)+h(n)=1
+IJE
+F
 
-EJ
+BCH
+ADG
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-3, f(n)=g(n)+h(n)=1
+IJE
+
+
 BCHF
 ADG
 >>>>>>>>>>
-move 3, pathcost=3, heuristic=-12, f(n)=g(n)+h(n)=-9
-I
+move 5, pathcost=5, heuristic=-4, f(n)=g(n)+h(n)=1
+IJE
 
-EJ
+
 BCHFG
 AD
 >>>>>>>>>>
-move 4, pathcost=4, heuristic=-12, f(n)=g(n)+h(n)=-8
-I
-J
-E
-BCHFG
-AD
->>>>>>>>>>
-move 5, pathcost=5, heuristic=-14, f(n)=g(n)+h(n)=-9
-I
-J
+move 6, pathcost=6, heuristic=-5, f(n)=g(n)+h(n)=1
+IJ
+
 
 BCHFGE
 AD
 >>>>>>>>>>
-move 6, pathcost=6, heuristic=-14, f(n)=g(n)+h(n)=-8
-I
-JD
+move 7, pathcost=7, heuristic=-5, f(n)=g(n)+h(n)=2
+IJ
+D
 
 BCHFGE
 A
 >>>>>>>>>>
-move 7, pathcost=7, heuristic=-16, f(n)=g(n)+h(n)=-9
-I
-JD
+move 8, pathcost=8, heuristic=-8, f(n)=g(n)+h(n)=0
+IJ
+D
 A
 BCHFGE
 
 >>>>>>>>>>
-move 8, pathcost=8, heuristic=-18, f(n)=g(n)+h(n)=-10
+move 9, pathcost=9, heuristic=-9, f(n)=g(n)+h(n)=0
 I
-J
-AD
-BCHFGE
-
->>>>>>>>>>
-move 9, pathcost=9, heuristic=-20, f(n)=g(n)+h(n)=-11
-I
-
-AD
+D
+A
 BCHFGE
 J
 >>>>>>>>>>
-statistics: probB11.bwp heuristic H4 planlen 9 iter 32 maxq 304
+move 10, pathcost=10, heuristic=-10, f(n)=g(n)+h(n)=0
+I
+
+AD
+BCHFGE
+J
+>>>>>>>>>>
+statistics: probB11.bwp heuristic H4 planlen 10 iter 20 maxq 197

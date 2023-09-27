@@ -1,0 +1,84 @@
+Describe your heuristic:
+    My primary heuristic (H4) starts with a value of 0, with the goal of incrementing 
+    or decrementing it depending on how many blocks of the current state are in their goal state 
+    and how many are not.
+
+    For each block in the current stack that matches its position in the goal stack:
+        The heuristic value is decremented by 1. 
+        This means that states with more blocks in the correct position compared to 
+        the goal state will have a lower heuristic value and will be prioritized.
+
+    For each block in the current stack that does not match its position in the goal stack:
+        The heuristic value is incremented by 2. 
+        This means that states with more blocks out of place compared to 
+        the goal state will have a higher heuristic value and will be less prioritized.
+
+    In other words, this heuristic rewards closeness to the goal, and punishes distance, 
+    as opposed to only punishing distance.
+
+    The purpose of incrementing by 2 while decrementing by 1 is that of deincentivizing garden-paths
+    which might otherwise be explored by the "greediness" of the reward system. 
+    
+    I've experiemented with other ratios between the reward and punishment, and have found that
+    the r/p ratio of 1/2 is the "sweet spot" between iterations, maxq, and path lengths.
+    Increasing the r/p ratio (more reward and/or less punishment) leads to an average higher iterations with shorter path lengths.
+    Decreasing the r/p ratio (less reward and/or more punishment) leads to an average lower iterations with longer path lengths.
+
+Example States & Their Heuristic Values:
+    Given the goal state:
+        >>>>>>>>>>
+
+
+
+        DC
+        JHABEFIG
+        >>>>>>>>>>
+
+    The following two states show a progession towards the goal:
+        >>>>>>>>>>
+        move 1, pathcost=1, heuristic=2, f(n)=g(n)+h(n)=3
+        BEFI
+        D
+        A
+        CG
+        JH
+        >>>>>>>>>>
+        move 2, pathcost=2, heuristic=1, f(n)=g(n)+h(n)=3
+        BEFI
+        D
+
+        CG
+        JHA
+        >>>>>>>>>>
+    
+    For more examples, see the transcripts/ folder, which contains all of the solution paths to the test problems
+
+Performance of H4 on the test problems: (Also in statistics.txt)
+    statistics: probA03.bwp heuristic H4 planlen 3 iter 3 maxq 10
+    statistics: probA04.bwp heuristic H4 planlen 4 iter 5 maxq 10
+    statistics: probA05.bwp heuristic H4 planlen 5 iter 11 maxq 22
+    statistics: probA06.bwp heuristic H4 planlen 6 iter 21 maxq 42
+    statistics: probA07.bwp heuristic H4 planlen 7 iter 13 maxq 21
+    statistics: probA08.bwp heuristic H4 planlen 10 iter 77 maxq 91
+    statistics: probA09.bwp heuristic H4 planlen 10 iter 34 maxq 41
+    statistics: probA10.bwp heuristic H4 planlen 10 iter 61 maxq 64
+    statistics: probA11.bwp heuristic H4 planlen 12 iter 44 maxq 56
+    statistics: probB03.bwp heuristic H4 planlen 3 iter 4 maxq 51
+    statistics: probB04.bwp heuristic H4 planlen 4 iter 5 maxq 75
+    statistics: probB05.bwp heuristic H4 planlen 5 iter 6 maxq 82
+    statistics: probB06.bwp heuristic H4 planlen 7 iter 13 maxq 138
+    statistics: probB07.bwp heuristic H4 planlen 7 iter 13 maxq 125
+    statistics: probB08.bwp heuristic H4 planlen 8 iter 19 maxq 186
+    statistics: probB09.bwp heuristic H4 planlen 9 iter 11 maxq 104
+    statistics: probB10.bwp heuristic H4 planlen 11 iter 24 maxq 263
+    statistics: probB11.bwp heuristic H4 planlen 10 iter 20 maxq 197
+    statistics: probB12.bwp heuristic H4 planlen 12 iter 64 maxq 609
+    statistics: probB13.bwp heuristic H4 planlen 14 iter 4412 maxq 30099
+    statistics: probB14.bwp heuristic H4 planlen 16 iter 1169 maxq 7602
+    statistics: probB15.bwp heuristic H4 planlen 16 iter 48 maxq 380
+    statistics: probB16.bwp heuristic H4 planlen 17 iter 83 maxq 633
+    statistics: probB17.bwp heuristic H4 planlen 16 iter 257 maxq 1713
+    statistics: probB18.bwp heuristic H4 planlen 12 iter 18 maxq 173
+    statistics: probB19.bwp heuristic H4 planlen 15 iter 1240 maxq 7936
+    statistics: probB20.bwp heuristic H4 planlen 19 iter 161 maxq 1195
+

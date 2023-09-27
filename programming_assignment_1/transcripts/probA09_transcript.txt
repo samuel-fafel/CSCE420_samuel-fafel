@@ -3,49 +3,54 @@ AE
 CD
 B
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=-2, f(n)=g(n)+h(n)=-1
+move 1, pathcost=1, heuristic=5, f(n)=g(n)+h(n)=6
 A
 CDE
 B
 >>>>>>>>>>
-move 2, pathcost=2, heuristic=-2, f(n)=g(n)+h(n)=0
+move 2, pathcost=2, heuristic=3, f(n)=g(n)+h(n)=5
 
 CDE
 BA
 >>>>>>>>>>
-move 3, pathcost=3, heuristic=-4, f(n)=g(n)+h(n)=-1
+move 3, pathcost=3, heuristic=2, f(n)=g(n)+h(n)=5
 E
 CD
 BA
 >>>>>>>>>>
-move 4, pathcost=4, heuristic=-6, f(n)=g(n)+h(n)=-2
+move 4, pathcost=4, heuristic=1, f(n)=g(n)+h(n)=5
 EA
 CD
 B
 >>>>>>>>>>
-move 5, pathcost=5, heuristic=-4, f(n)=g(n)+h(n)=1
-EAD
-C
-B
+move 5, pathcost=5, heuristic=-1, f(n)=g(n)+h(n)=4
+EAB
+CD
+
 >>>>>>>>>>
-move 6, pathcost=6, heuristic=-4, f(n)=g(n)+h(n)=2
-EADB
+move 6, pathcost=6, heuristic=0, f(n)=g(n)+h(n)=6
+EABD
 C
 
 >>>>>>>>>>
-move 7, pathcost=7, heuristic=-6, f(n)=g(n)+h(n)=1
-EADB
+move 7, pathcost=7, heuristic=-3, f(n)=g(n)+h(n)=4
+EABD
 
 C
 >>>>>>>>>>
-move 8, pathcost=8, heuristic=-8, f(n)=g(n)+h(n)=0
-EAD
-B
-C
+move 8, pathcost=8, heuristic=-3, f(n)=g(n)+h(n)=5
+EAB
+
+CD
 >>>>>>>>>>
-move 9, pathcost=9, heuristic=-10, f(n)=g(n)+h(n)=-1
+move 9, pathcost=9, heuristic=-4, f(n)=g(n)+h(n)=5
+EA
+B
+CD
+>>>>>>>>>>
+move 10, pathcost=10, heuristic=-5, f(n)=g(n)+h(n)=5
 EA
 BD
 C
 >>>>>>>>>>
-statistics: probA09.bwp heuristic H4 planlen 9 iter 65 maxq 85
+statistics: probA09.bwp heuristic H4 planlen 10 iter 34 maxq 41

@@ -3,39 +3,39 @@ BCD
 A
 E
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=0, f(n)=g(n)+h(n)=1
+move 1, pathcost=1, heuristic=2, f(n)=g(n)+h(n)=3
+BCDE
+A
+
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=-1, f(n)=g(n)+h(n)=1
+BCDE
+
+A
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=1, f(n)=g(n)+h(n)=4
 BCD
 
-EA
+AE
 >>>>>>>>>>
-move 2, pathcost=2, heuristic=-2, f(n)=g(n)+h(n)=0
+move 4, pathcost=4, heuristic=0, f(n)=g(n)+h(n)=4
 BC
 D
-EA
+AE
 >>>>>>>>>>
-move 3, pathcost=3, heuristic=-4, f(n)=g(n)+h(n)=-1
+move 5, pathcost=5, heuristic=-1, f(n)=g(n)+h(n)=4
 B
 DC
-EA
+AE
 >>>>>>>>>>
-move 4, pathcost=4, heuristic=-4, f(n)=g(n)+h(n)=0
-BA
-DC
-E
->>>>>>>>>>
-move 5, pathcost=5, heuristic=-6, f(n)=g(n)+h(n)=-1
-BA
-DCE
-
->>>>>>>>>>
-move 6, pathcost=6, heuristic=-8, f(n)=g(n)+h(n)=-2
+move 6, pathcost=6, heuristic=-4, f(n)=g(n)+h(n)=2
 B
 DCE
 A
 >>>>>>>>>>
-move 7, pathcost=7, heuristic=-10, f(n)=g(n)+h(n)=-3
+move 7, pathcost=7, heuristic=-5, f(n)=g(n)+h(n)=2
 
 DCE
 AB
 >>>>>>>>>>
-statistics: probA07.bwp heuristic H4 planlen 7 iter 12 maxq 27
+statistics: probA07.bwp heuristic H4 planlen 7 iter 13 maxq 21

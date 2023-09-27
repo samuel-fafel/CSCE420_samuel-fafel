@@ -5,130 +5,137 @@ ADEI
 G
 
 >>>>>>>>>>
-move 1, pathcost=1, heuristic=-2, f(n)=g(n)+h(n)=-1
+move 1, pathcost=1, heuristic=11, f(n)=g(n)+h(n)=12
 BCJ
 F
 ADEI
 GH
 
 >>>>>>>>>>
-move 2, pathcost=2, heuristic=-2, f(n)=g(n)+h(n)=0
-BCJ
-F
+move 2, pathcost=2, heuristic=9, f(n)=g(n)+h(n)=11
+BCJF
+
+ADEI
+GH
+
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=9, f(n)=g(n)+h(n)=12
+BCJFI
+
 ADE
-GHI
+GH
 
 >>>>>>>>>>
-move 3, pathcost=3, heuristic=-4, f(n)=g(n)+h(n)=-1
-BCJ
-FE
+move 4, pathcost=4, heuristic=7, f(n)=g(n)+h(n)=11
+BCJFI
+
 AD
-GHI
+GHE
 
 >>>>>>>>>>
-move 4, pathcost=4, heuristic=-6, f(n)=g(n)+h(n)=-2
+move 5, pathcost=5, heuristic=4, f(n)=g(n)+h(n)=9
+BCJFI
+
+A
+GHE
+D
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=4, f(n)=g(n)+h(n)=10
+BCJF
+
+A
+GHEI
+D
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=2, f(n)=g(n)+h(n)=9
+BCJF
+
+
+GHEIA
+D
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=1, f(n)=g(n)+h(n)=9
 BCJ
-FE
-A
-GHI
+
+F
+GHEIA
 D
 >>>>>>>>>>
-move 5, pathcost=5, heuristic=-4, f(n)=g(n)+h(n)=1
+move 9, pathcost=9, heuristic=2, f(n)=g(n)+h(n)=11
 BC
-FEJ
-A
-GHI
+
+F
+GHEIAJ
 D
 >>>>>>>>>>
-move 6, pathcost=6, heuristic=-4, f(n)=g(n)+h(n)=2
+move 10, pathcost=10, heuristic=-1, f(n)=g(n)+h(n)=9
 B
-FEJ
-A
-GHIC
-D
->>>>>>>>>>
-move 7, pathcost=7, heuristic=-6, f(n)=g(n)+h(n)=1
-
-FEJ
-A
-GHIC
-DB
->>>>>>>>>>
-move 8, pathcost=8, heuristic=-8, f(n)=g(n)+h(n)=0
-A
-FEJ
-
-GHIC
-DB
->>>>>>>>>>
-move 9, pathcost=9, heuristic=-8, f(n)=g(n)+h(n)=1
-A
-FEJ
-
-GHI
-DBC
->>>>>>>>>>
-move 10, pathcost=10, heuristic=-10, f(n)=g(n)+h(n)=0
-AI
-FEJ
-
-GH
-DBC
->>>>>>>>>>
-move 11, pathcost=11, heuristic=-12, f(n)=g(n)+h(n)=-1
-AIJ
-FE
-
-GH
-DBC
->>>>>>>>>>
-move 12, pathcost=12, heuristic=-10, f(n)=g(n)+h(n)=2
-AIJE
-F
-
-GH
-DBC
->>>>>>>>>>
-move 13, pathcost=13, heuristic=-12, f(n)=g(n)+h(n)=1
-AIJE
-
-F
-GH
-DBC
->>>>>>>>>>
-move 14, pathcost=14, heuristic=-14, f(n)=g(n)+h(n)=0
-AIJE
 C
 F
-GH
+GHEIAJ
+D
+>>>>>>>>>>
+move 11, pathcost=11, heuristic=-4, f(n)=g(n)+h(n)=7
+
+C
+F
+GHEIAJ
 DB
 >>>>>>>>>>
-move 15, pathcost=15, heuristic=-16, f(n)=g(n)+h(n)=-1
+move 12, pathcost=12, heuristic=-4, f(n)=g(n)+h(n)=8
+
+C
+F
+GHEIA
+DBJ
+>>>>>>>>>>
+move 13, pathcost=13, heuristic=-5, f(n)=g(n)+h(n)=8
+A
+C
+F
+GHEI
+DBJ
+>>>>>>>>>>
+move 14, pathcost=14, heuristic=-6, f(n)=g(n)+h(n)=8
+AI
+C
+F
+GHE
+DBJ
+>>>>>>>>>>
+move 15, pathcost=15, heuristic=-7, f(n)=g(n)+h(n)=8
+AI
+CE
+F
+GH
+DBJ
+>>>>>>>>>>
+move 16, pathcost=16, heuristic=-8, f(n)=g(n)+h(n)=8
 AIJ
 CE
 F
 GH
 DB
 >>>>>>>>>>
-move 16, pathcost=16, heuristic=-16, f(n)=g(n)+h(n)=0
-AIJH
-CE
+move 17, pathcost=17, heuristic=-8, f(n)=g(n)+h(n)=9
+AIJ
+CEH
 F
 G
 DB
 >>>>>>>>>>
-move 17, pathcost=17, heuristic=-18, f(n)=g(n)+h(n)=-1
-AIJH
-CE
+move 18, pathcost=18, heuristic=-9, f(n)=g(n)+h(n)=9
+AIJ
+CEH
 FG
 
 DB
 >>>>>>>>>>
-move 18, pathcost=18, heuristic=-20, f(n)=g(n)+h(n)=-2
+move 19, pathcost=19, heuristic=-10, f(n)=g(n)+h(n)=9
 AIJ
 CE
 FGH
 
 DB
 >>>>>>>>>>
-statistics: probB20.bwp heuristic H4 planlen 18 iter 18588 maxq 103847
+statistics: probB20.bwp heuristic H4 planlen 19 iter 161 maxq 1195
