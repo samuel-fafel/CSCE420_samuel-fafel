@@ -4,41 +4,81 @@ import queue
 class State:
     def __init__(self, stacks):
         self.stacks = stacks
-
+    
     def __str__(self):
-        return '\n'.join([''.join(stack) for stack in self.stacks])
+        return "\n".join(["".join(stack) for stack in self.stacks])
 
-    def is_goal(self, goal):
-        return self.stacks == goal.stacks
-
-    def generate_successors(self):
+    def successors(self):
+        """Generate all possible successor states from the current state."""
         successors = []
 
-        for i in range(len(self.stacks)):
-            if not self.stacks[i]:  # Can't move from an empty stack
-                continue
-            for j in range(len(self.stacks)):
-                if i == j:
-                    continue
+        # Iterate over all stacks to find possible blocks to move
+        for i, src_stack in enumerate(self.stacks):
+            if src_stack:  # if the stack is not empty
+                # Get the top block from the source stack
+                block_to_move = src_stack[-1]
                 
-                new_stacks = [stack.copy() for stack in self.stacks]
-                block_to_move = new_stacks[i].pop()
-                new_stacks[j].append(block_to_move)
-
-                successors.append(State(new_stacks))
+                # Try to move this block to every other stack
+                for j, tgt_stack in enumerate(self.stacks):
+                    if i != j:  # Don't move the block to the same stack
+                        new_stacks = [list(s) for s in self.stacks]  # Create a deep copy of current stacks
+                        new_stacks[i].pop()  # Remove the block from the source stack
+                        new_stacks[j].append(block_to_move)  # Add the block to the target stack
+                        
+                        # Create a new state from the modified stacks and add it to successors
+                        successors.append(State(new_stacks))
+        
         return successors
 
 class Node:
-    def __init__(self, state, parent=None, g=0):
-        self.state = state
-        self.parent = parent
-        self.g = g # path cost
-        self.h = 0 # heuristic estimate
-        self.f = 0 # f = g + h
-        self.depth = 0 if parent is None else parent.depth + 1
+    def __init__(self, state, parent=None, g=0, h=0):
+        self.state = state         # The current state
+        self.parent = parent       # Parent node
+        self.g = g                 # Cost to reach this node from the start
+        self.h = h                 # Heuristic estimate from this state to goal
+        self.f = self.g + self.h   # f(n) = g(n) + h(n)
+
+    def path(self):
+        """Generate the path from the root to this node."""
+        node, path_backwards = self, []
+        while node:
+            path_backwards.append(node)
+            node = node.parent
+        return path_backwards[::-1]  # Return reversed path
+
+    def print_path(self):
+        path_to_solution = self.path()
+        move_count = 0
+        for node in path_to_solution:
+            print(f"move {move_count}, pathcost={node.g}, heuristic={node.h}, f(n)=g(n)+h(n)={node.f}")
+            print(node)
+            print(">>>>>>>>>>")
+            move_count += 1
+        # For statistics (this is a basic example, you might want to add more details later)
+        print(f"statistics: method Astar planlen {move_count-1}")
+
+    def __str__(self):
+        return str(self.state)
 
     def __lt__(self, other):
+        """This function is used to compare nodes in a priority queue by their f values."""
         return self.f < other.f
+
+class Problem:
+    def __init__(self, S, B, M, initial_stacks, goal_stacks):
+        self.S = S  # Number of stacks
+        self.B = B  # Number of blocks
+        self.M = M  # Number of moves
+        self.initial = initial_stacks  # Initial configuration of stacks
+        self.goal = goal_stacks  # Goal configuration of stacks
+
+    def __str__(self):
+        return (f"S: {self.S}, B: {self.B}, M: {self.M}\n"
+                f"Initial Stacks: {self.initial}\n"
+                f"Goal Stacks: {self.goal}")
+        
+    def is_goal(self, state):
+        return state.stacks == self.goal
 
 def load_problem(filename):
     with open(filename, 'r') as f:
@@ -49,81 +89,67 @@ def load_problem(filename):
         f.readline()  # skip separator
         
         goal_stacks = [list(f.readline().strip()) for _ in range(S)]
-    return S, B, M, initial_stacks, goal_stacks
+    
+    return Problem(S, B, M, initial_stacks, goal_stacks)
 
-def backtrack_solution(node):
-    path = []
-    while node:
-        path.insert(0, node.state)
-        node = node.parent
-    return path
-
-def heuristic_h0(current, goal):
+def heuristic_h0(state, goal):
     # No heuristic, imitate BFS
     return 0
 
-def a_star(initial_state, goal_state, heuristic):
-    open_list = queue.PriorityQueue()
-    closed_list = set()
+def heuristic_h1(state, goal):
+    # Sum of mismatched blocks
+    mismatches = 0
+    for i in range(len(state.stacks)):
+        for j in range(min(len(state.stacks[i]), len(goal.stacks[i]))):  # Use min to prevent IndexError
+            if state.stacks[i][j] != goal.stacks[i][j]:
+                mismatches += 1
+    return mismatches
 
-    start_node = Node(initial_state, g=0)
-    start_node.h = heuristic(start_node.state, goal_state)
-    start_node.f = start_node.g + start_node.h
-    open_list.put(start_node)
+def a_star(problem, heuristic):
+    initial_state = State(problem.initial)
+    goal_state = State(problem.goal)
+    initial_node = Node(initial_state, g=0, h=heuristic(initial_state, goal_state))
+    
+    frontier = queue.PriorityQueue()
+    frontier.put(initial_node)
+    
+    reached = {str(initial_state): initial_node}
 
-    while not open_list.empty():
-        current_node = open_list.get()
+    while not frontier.empty():
+        node = frontier.get()
 
-        if current_node.state.is_goal(goal_state):
-            return backtrack_solution(current_node)
+        if problem.is_goal(node.state):
+            return node  # Return the solution node
 
-        closed_list.add(str(current_node.state))
+        for child_state in node.state.successors():
+            g_new = node.g + 1  # Assuming cost for each move is 1
+            h_new = heuristic(child_state, goal_state)
+            child_node = Node(child_state, parent=node, g=g_new, h=h_new)
+            
+            state_str = str(child_state)
+            if state_str not in reached or child_node.g < reached[state_str].g:
+                reached[state_str] = child_node
+                frontier.put(child_node)
 
-        for successor_state in current_node.state.generate_successors():
-            successor_node = Node(successor_state, parent=current_node, g=current_node.g + 1)
-            successor_node.h = heuristic(successor_node.state, goal_state)
-            successor_node.f = successor_node.g + successor_node.h
-
-            if str(successor_node.state) in closed_list:
-                continue
-
-            # Check if this node is already in the open_list with a lower cost
-            open_list_temp = []
-            skip_successor = False
-            while not open_list.empty():
-                existing_node = open_list.get()
-                if existing_node.state == successor_node.state and existing_node.f <= successor_node.f:
-                    skip_successor = True
-                    open_list_temp.append(existing_node)
-                    break
-                open_list_temp.append(existing_node)
-
-            for node_to_reinsert in open_list_temp:
-                open_list.put(node_to_reinsert)
-
-            if not skip_successor:
-                open_list.put(successor_node)
-
-    # Goal not found
-    return None
+    return None  # Return failure if no solution found
 
 if __name__ == "__main__": # Load & Solve Problem
-    S, B, M, initial_stacks, goal_stacks = load_problem(sys.argv[1])
-    initial_state = State(initial_stacks)
-    goal_state = State(goal_stacks)
+    problem = load_problem(sys.argv[1])
+    initial_state = State(problem.initial)
+    goal_state = State(problem.goal)
     
     heuristic = heuristic_h0
     if "-H" in sys.argv:
         heuristic_flag_index = sys.argv.index("-H")
         heuristic_name = sys.argv[heuristic_flag_index + 1]
-        if heuristic_name == "H1":
-            heuristic = heuristic_h1
+        match heuristic_name:
+            case "H1":
+                heuristic = heuristic_h1
+            case _:
+                heuristic = heuristic_h0
 
-    solution = a_star(initial_state, goal_state, heuristic)  # Using heuristic_h0 as an example
+    solution = a_star(problem, heuristic)
     if solution:
-        for step, state in enumerate(solution):
-            print(f"move {step}, pathcost={step}, heuristic={heuristic_h0(state, goal_state)}, f(n)=g(n)+h(n)={step + heuristic_h0(state, goal_state)}")
-            print(state)
-            print(">>>>>>>>>>")
+        solution.print_path()
     else:
         print("No solution found.")
