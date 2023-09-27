@@ -2,6 +2,7 @@ import sys
 import queue
 
 class State:
+    # Defines the current state of the blocksworld
     def __init__(self, stacks):
         self.stacks = stacks
     
@@ -9,7 +10,7 @@ class State:
         return "\n".join(["".join(stack) for stack in self.stacks])
 
     def successors(self):
-        """Generate all possible successor states from the current state."""
+        # Generate all possible successor states from the current state.
         successors = []
 
         # Iterate over all stacks to find possible blocks to move
@@ -31,15 +32,16 @@ class State:
         return successors
 
 class Node:
+    # Wrapper around State
     def __init__(self, state, parent=None, g=0, h=0):
-        self.state = state         # The current state
-        self.parent = parent       # Parent node
-        self.g = g                 # Cost to reach this node from the start
-        self.h = h                 # Heuristic estimate from this state to goal
-        self.f = self.g + self.h   # f(n) = g(n) + h(n)
+        self.state = state          # The current state
+        self.parent = parent        # Parent node
+        self.g = g                  # Cost to reach this node from the start
+        self.h = h                  # Heuristic estimate from this state to goal
+        self.f = self.g + self.h    # f(n) = g(n) + h(n)
 
     def path(self):
-        """Generate the path from the root to this node."""
+        # Generate the path from the root to this node.
         node, path_backwards = self, []
         while node:
             path_backwards.append(node)
@@ -50,10 +52,11 @@ class Node:
         return str(self.state)
 
     def __lt__(self, other):
-        """This function is used to compare nodes in a priority queue by their f values."""
+        # Compare nodes in a priority queue by their f values.
         return self.f < other.f
 
 class Problem:
+    # Stores the input data of the problem
     def __init__(self, S, B, M, initial_stacks, goal_stacks):
         self.S = S  # Number of stacks
         self.B = B  # Number of blocks
@@ -70,6 +73,7 @@ class Problem:
         return state.stacks == self.goal
 
 class Result:
+    # Stores the output data of the problem
     def __init__(self, node, iters, maxq):
         self.node = node
         self.iters = iters
@@ -130,6 +134,7 @@ def heuristic_h4(node, goal):
     return heuristic_value
 
 def a_star(problem, heuristic, maxiters):
+    # Best First Search
     initial_state = State(problem.initial)
     goal_state = State(problem.goal)
     initial_node = Node(initial_state)
@@ -172,6 +177,7 @@ def a_star(problem, heuristic, maxiters):
     return solution  # Return failure if no solution found
 
 def print_path(result, filename, silent=False):
+    # Writes & Prints the moves from initial to goal
     writefile = filename.replace("probs/", "transcripts/").replace(".bwp", "_transcript.txt")
     with open(writefile, "w") as file:
         if result.node:
@@ -184,9 +190,9 @@ def print_path(result, filename, silent=False):
                 if not silent: print(message)
         else:
             file.write("")
-        return message
             
 def print_statistics(result, filename, heuristic_name, silent=False):
+    # Writes, Prints, and Returns the statistics for each Result
     writefile = filename.replace("probs/", "transcripts/").replace(".bwp", "_transcript.txt")
     newname = filename.replace("probs/", "")
     if result.node:
