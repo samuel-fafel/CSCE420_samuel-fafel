@@ -1,0 +1,71 @@
+move 0, pathcost=0, heuristic=0, f(n)=g(n)+h(n)=0
+
+BF
+CGHI
+AJ
+DE
+>>>>>>>>>>
+move 1, pathcost=1, heuristic=-8, f(n)=g(n)+h(n)=-7
+
+BFJ
+CGHI
+A
+DE
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=-8, f(n)=g(n)+h(n)=-6
+A
+BFJ
+CGHI
+
+DE
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-10, f(n)=g(n)+h(n)=-7
+A
+BFJ
+CGHI
+E
+D
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-12, f(n)=g(n)+h(n)=-8
+A
+BFJ
+CGH
+EI
+D
+>>>>>>>>>>
+move 5, pathcost=5, heuristic=-14, f(n)=g(n)+h(n)=-9
+A
+BFJ
+CGH
+EID
+
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=-16, f(n)=g(n)+h(n)=-10
+
+BFJ
+CGH
+EID
+A
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-16, f(n)=g(n)+h(n)=-9
+H
+BFJ
+CG
+EID
+A
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-18, f(n)=g(n)+h(n)=-10
+H
+BFJ
+C
+EIDG
+A
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-20, f(n)=g(n)+h(n)=-11
+
+BFJ
+CH
+EIDG
+A
+>>>>>>>>>>
+statistics: probB10.bwp heuristic H4 planlen 9 iter 193 maxq 1513

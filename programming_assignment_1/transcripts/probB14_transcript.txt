@@ -1,0 +1,113 @@
+move 0, pathcost=0, heuristic=0, f(n)=g(n)+h(n)=0
+CDF
+AGI
+
+BHJ
+E
+>>>>>>>>>>
+move 1, pathcost=1, heuristic=-4, f(n)=g(n)+h(n)=-3
+CD
+AGI
+
+BHJF
+E
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=-6, f(n)=g(n)+h(n)=-4
+C
+AGI
+D
+BHJF
+E
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-4, f(n)=g(n)+h(n)=-1
+C
+AGI
+D
+BHJ
+EF
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-6, f(n)=g(n)+h(n)=-2
+C
+AGI
+DJ
+BH
+EF
+>>>>>>>>>>
+move 5, pathcost=5, heuristic=-8, f(n)=g(n)+h(n)=-3
+C
+AG
+DJI
+BH
+EF
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=-8, f(n)=g(n)+h(n)=-2
+C
+AG
+DJI
+B
+EFH
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-8, f(n)=g(n)+h(n)=-1
+C
+AG
+DJI
+
+EFHB
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-10, f(n)=g(n)+h(n)=-2
+
+AG
+DJI
+C
+EFHB
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-12, f(n)=g(n)+h(n)=-3
+
+A
+DJI
+CG
+EFHB
+>>>>>>>>>>
+move 10, pathcost=10, heuristic=-14, f(n)=g(n)+h(n)=-4
+
+AB
+DJI
+CG
+EFH
+>>>>>>>>>>
+move 11, pathcost=11, heuristic=-14, f(n)=g(n)+h(n)=-3
+H
+AB
+DJI
+CG
+EF
+>>>>>>>>>>
+move 12, pathcost=12, heuristic=-14, f(n)=g(n)+h(n)=-2
+HF
+AB
+DJI
+CG
+E
+>>>>>>>>>>
+move 13, pathcost=13, heuristic=-16, f(n)=g(n)+h(n)=-3
+HF
+AB
+DJI
+CGE
+
+>>>>>>>>>>
+move 14, pathcost=14, heuristic=-18, f(n)=g(n)+h(n)=-4
+H
+AB
+DJI
+CGEF
+
+>>>>>>>>>>
+move 15, pathcost=15, heuristic=-20, f(n)=g(n)+h(n)=-5
+
+AB
+DJI
+CGEFH
+
+>>>>>>>>>>
+statistics: probB14.bwp heuristic H4 planlen 15 iter 1968 maxq 14645

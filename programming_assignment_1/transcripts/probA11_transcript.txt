@@ -1,0 +1,61 @@
+move 0, pathcost=0, heuristic=0, f(n)=g(n)+h(n)=0
+ABCDE
+
+
+>>>>>>>>>>
+move 1, pathcost=1, heuristic=0, f(n)=g(n)+h(n)=1
+ABCD
+E
+
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=0, f(n)=g(n)+h(n)=2
+ABC
+E
+D
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-2, f(n)=g(n)+h(n)=1
+AB
+EC
+D
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-2, f(n)=g(n)+h(n)=2
+AB
+ECD
+
+>>>>>>>>>>
+move 5, pathcost=5, heuristic=-4, f(n)=g(n)+h(n)=1
+A
+ECD
+B
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=-6, f(n)=g(n)+h(n)=0
+A
+EC
+BD
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-4, f(n)=g(n)+h(n)=3
+A
+E
+BDC
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-4, f(n)=g(n)+h(n)=4
+
+E
+BDCA
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-6, f(n)=g(n)+h(n)=3
+E
+
+BDCA
+>>>>>>>>>>
+move 10, pathcost=10, heuristic=-8, f(n)=g(n)+h(n)=2
+E
+A
+BDC
+>>>>>>>>>>
+move 11, pathcost=11, heuristic=-10, f(n)=g(n)+h(n)=1
+E
+AC
+BD
+>>>>>>>>>>
+statistics: probA11.bwp heuristic H4 planlen 11 iter 148 maxq 217

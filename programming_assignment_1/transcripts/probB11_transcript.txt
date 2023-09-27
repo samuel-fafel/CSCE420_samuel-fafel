@@ -1,0 +1,71 @@
+move 0, pathcost=0, heuristic=0, f(n)=g(n)+h(n)=0
+
+F
+EJ
+BCHI
+ADG
+>>>>>>>>>>
+move 1, pathcost=1, heuristic=-8, f(n)=g(n)+h(n)=-7
+I
+F
+EJ
+BCH
+ADG
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=-10, f(n)=g(n)+h(n)=-8
+I
+
+EJ
+BCHF
+ADG
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-12, f(n)=g(n)+h(n)=-9
+I
+
+EJ
+BCHFG
+AD
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-12, f(n)=g(n)+h(n)=-8
+I
+J
+E
+BCHFG
+AD
+>>>>>>>>>>
+move 5, pathcost=5, heuristic=-14, f(n)=g(n)+h(n)=-9
+I
+J
+
+BCHFGE
+AD
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=-14, f(n)=g(n)+h(n)=-8
+I
+JD
+
+BCHFGE
+A
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-16, f(n)=g(n)+h(n)=-9
+I
+JD
+A
+BCHFGE
+
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-18, f(n)=g(n)+h(n)=-10
+I
+J
+AD
+BCHFGE
+
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-20, f(n)=g(n)+h(n)=-11
+I
+
+AD
+BCHFGE
+J
+>>>>>>>>>>
+statistics: probB11.bwp heuristic H4 planlen 9 iter 32 maxq 304

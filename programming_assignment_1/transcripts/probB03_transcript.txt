@@ -1,0 +1,29 @@
+move 0, pathcost=0, heuristic=0, f(n)=g(n)+h(n)=0
+DEHIJ
+G
+B
+AC
+F
+>>>>>>>>>>
+move 1, pathcost=1, heuristic=-16, f(n)=g(n)+h(n)=-15
+DEHIJ
+GB
+
+AC
+F
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=-18, f(n)=g(n)+h(n)=-16
+DEHIJ
+GB
+C
+A
+F
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-20, f(n)=g(n)+h(n)=-17
+DEHIJF
+GB
+C
+A
+
+>>>>>>>>>>
+statistics: probB03.bwp heuristic H4 planlen 3 iter 3 maxq 46

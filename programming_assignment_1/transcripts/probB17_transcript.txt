@@ -1,0 +1,120 @@
+move 0, pathcost=0, heuristic=0, f(n)=g(n)+h(n)=0
+AD
+H
+CEFJ
+BI
+G
+>>>>>>>>>>
+move 1, pathcost=1, heuristic=0, f(n)=g(n)+h(n)=1
+A
+HD
+CEFJ
+BI
+G
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=0, f(n)=g(n)+h(n)=2
+
+HD
+CEFJ
+BI
+GA
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-2, f(n)=g(n)+h(n)=1
+I
+HD
+CEFJ
+B
+GA
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-4, f(n)=g(n)+h(n)=0
+IA
+HD
+CEFJ
+B
+G
+>>>>>>>>>>
+move 5, pathcost=5, heuristic=-4, f(n)=g(n)+h(n)=1
+IA
+HD
+CEFJ
+
+GB
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=-6, f(n)=g(n)+h(n)=0
+IA
+H
+CEFJ
+D
+GB
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-6, f(n)=g(n)+h(n)=1
+IAJ
+H
+CEF
+D
+GB
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-8, f(n)=g(n)+h(n)=0
+IAJ
+H
+CE
+DF
+GB
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-10, f(n)=g(n)+h(n)=-1
+IA
+H
+CE
+DFJ
+GB
+>>>>>>>>>>
+move 10, pathcost=10, heuristic=-12, f(n)=g(n)+h(n)=-2
+IA
+H
+CE
+DFJB
+G
+>>>>>>>>>>
+move 11, pathcost=11, heuristic=-14, f(n)=g(n)+h(n)=-3
+IA
+
+CE
+DFJBH
+G
+>>>>>>>>>>
+move 12, pathcost=12, heuristic=-14, f(n)=g(n)+h(n)=-2
+IAE
+
+C
+DFJBH
+G
+>>>>>>>>>>
+move 13, pathcost=13, heuristic=-14, f(n)=g(n)+h(n)=-1
+IAEC
+
+
+DFJBH
+G
+>>>>>>>>>>
+move 14, pathcost=14, heuristic=-16, f(n)=g(n)+h(n)=-2
+IAEC
+
+G
+DFJBH
+
+>>>>>>>>>>
+move 15, pathcost=15, heuristic=-18, f(n)=g(n)+h(n)=-3
+IAE
+
+G
+DFJBH
+C
+>>>>>>>>>>
+move 16, pathcost=16, heuristic=-20, f(n)=g(n)+h(n)=-4
+IA
+
+G
+DFJBH
+CE
+>>>>>>>>>>
+statistics: probB17.bwp heuristic H4 planlen 16 iter 5779 maxq 36288

@@ -1,0 +1,92 @@
+move 0, pathcost=0, heuristic=0, f(n)=g(n)+h(n)=0
+AB
+FH
+CG
+DEIJ
+
+>>>>>>>>>>
+move 1, pathcost=1, heuristic=0, f(n)=g(n)+h(n)=1
+A
+FH
+CG
+DEIJB
+
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=-2, f(n)=g(n)+h(n)=0
+
+FH
+CG
+DEIJB
+A
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-2, f(n)=g(n)+h(n)=1
+H
+F
+CG
+DEIJB
+A
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-4, f(n)=g(n)+h(n)=0
+H
+
+CG
+DEIJB
+AF
+>>>>>>>>>>
+move 5, pathcost=5, heuristic=-6, f(n)=g(n)+h(n)=-1
+H
+B
+CG
+DEIJ
+AF
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=-8, f(n)=g(n)+h(n)=-2
+H
+BG
+C
+DEIJ
+AF
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-10, f(n)=g(n)+h(n)=-3
+
+BGH
+C
+DEIJ
+AF
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-12, f(n)=g(n)+h(n)=-4
+C
+BGH
+
+DEIJ
+AF
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-14, f(n)=g(n)+h(n)=-5
+C
+BGH
+
+DEI
+AFJ
+>>>>>>>>>>
+move 10, pathcost=10, heuristic=-16, f(n)=g(n)+h(n)=-6
+C
+BGHI
+
+DE
+AFJ
+>>>>>>>>>>
+move 11, pathcost=11, heuristic=-18, f(n)=g(n)+h(n)=-7
+C
+BGHI
+
+D
+AFJE
+>>>>>>>>>>
+move 12, pathcost=12, heuristic=-20, f(n)=g(n)+h(n)=-8
+C
+BGHI
+D
+
+AFJE
+>>>>>>>>>>
+statistics: probB18.bwp heuristic H4 planlen 12 iter 3452 maxq 21399

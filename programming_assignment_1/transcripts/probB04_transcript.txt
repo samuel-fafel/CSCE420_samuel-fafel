@@ -1,0 +1,36 @@
+move 0, pathcost=0, heuristic=0, f(n)=g(n)+h(n)=0
+AEG
+C
+FJ
+BDI
+H
+>>>>>>>>>>
+move 1, pathcost=1, heuristic=-14, f(n)=g(n)+h(n)=-13
+AEG
+CJ
+F
+BDI
+H
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=-16, f(n)=g(n)+h(n)=-14
+AE
+CJ
+FG
+BDI
+H
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-18, f(n)=g(n)+h(n)=-15
+AEI
+CJ
+FG
+BD
+H
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-20, f(n)=g(n)+h(n)=-16
+AEI
+CJ
+FGH
+BD
+
+>>>>>>>>>>
+statistics: probB04.bwp heuristic H4 planlen 4 iter 4 maxq 65

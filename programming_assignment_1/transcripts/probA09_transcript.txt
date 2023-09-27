@@ -1,0 +1,51 @@
+move 0, pathcost=0, heuristic=0, f(n)=g(n)+h(n)=0
+AE
+CD
+B
+>>>>>>>>>>
+move 1, pathcost=1, heuristic=-2, f(n)=g(n)+h(n)=-1
+A
+CDE
+B
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=-2, f(n)=g(n)+h(n)=0
+
+CDE
+BA
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-4, f(n)=g(n)+h(n)=-1
+E
+CD
+BA
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-6, f(n)=g(n)+h(n)=-2
+EA
+CD
+B
+>>>>>>>>>>
+move 5, pathcost=5, heuristic=-4, f(n)=g(n)+h(n)=1
+EAD
+C
+B
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=-4, f(n)=g(n)+h(n)=2
+EADB
+C
+
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-6, f(n)=g(n)+h(n)=1
+EADB
+
+C
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-8, f(n)=g(n)+h(n)=0
+EAD
+B
+C
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-10, f(n)=g(n)+h(n)=-1
+EA
+BD
+C
+>>>>>>>>>>
+statistics: probA09.bwp heuristic H4 planlen 9 iter 65 maxq 85

@@ -1,0 +1,78 @@
+move 0, pathcost=0, heuristic=0, f(n)=g(n)+h(n)=0
+FI
+CDGHJ
+E
+
+AB
+>>>>>>>>>>
+move 1, pathcost=1, heuristic=-8, f(n)=g(n)+h(n)=-7
+FI
+CDGHJB
+E
+
+A
+>>>>>>>>>>
+move 2, pathcost=2, heuristic=-10, f(n)=g(n)+h(n)=-8
+F
+CDGHJB
+E
+
+AI
+>>>>>>>>>>
+move 3, pathcost=3, heuristic=-12, f(n)=g(n)+h(n)=-9
+FE
+CDGHJB
+
+
+AI
+>>>>>>>>>>
+move 4, pathcost=4, heuristic=-12, f(n)=g(n)+h(n)=-8
+FE
+CDGHJ
+
+B
+AI
+>>>>>>>>>>
+move 5, pathcost=5, heuristic=-14, f(n)=g(n)+h(n)=-9
+FEJ
+CDGH
+
+B
+AI
+>>>>>>>>>>
+move 6, pathcost=6, heuristic=-16, f(n)=g(n)+h(n)=-10
+FEJ
+CDG
+H
+B
+AI
+>>>>>>>>>>
+move 7, pathcost=7, heuristic=-14, f(n)=g(n)+h(n)=-7
+FEJ
+CDG
+HI
+B
+A
+>>>>>>>>>>
+move 8, pathcost=8, heuristic=-16, f(n)=g(n)+h(n)=-8
+FEJA
+CDG
+HI
+B
+
+>>>>>>>>>>
+move 9, pathcost=9, heuristic=-18, f(n)=g(n)+h(n)=-9
+FEJA
+CDG
+HI
+
+B
+>>>>>>>>>>
+move 10, pathcost=10, heuristic=-20, f(n)=g(n)+h(n)=-10
+FEJA
+CDG
+H
+
+BI
+>>>>>>>>>>
+statistics: probB09.bwp heuristic H4 planlen 10 iter 175 maxq 1247
