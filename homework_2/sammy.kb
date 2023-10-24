@@ -1,0 +1,29 @@
+// Observation Implications
+O1Y --> (C1Y v C1B)
+O1W --> (C1W v C1B)
+O2Y --> (C2Y v C2B)
+O2W --> (C2W v C2B)
+O3Y --> (C3Y v C3B)
+O3W --> (C3W v C3B)
+
+// Label Implications
+L1Y --> (C1W v C1B)
+L1W --> (C1Y v C1B)
+L1B --> (C1Y v C1W)
+L2Y --> (C2W v C2B)
+L2W --> (C2Y v C2B)
+L2B --> (C2Y v C2W)
+L3Y --> (C3W v C3B)
+L3W --> (C3Y v C3B)
+L3B --> (C3Y v C3W)
+
+// Content Implications
+C1Y --> (C2W v C2B v C3W v C3B)
+C1W --> (C2Y v C2B v C3Y v C3B)
+C1B --> (C2Y v C2W v C3Y v C3W)
+C2Y --> (C1W v C1B v C3W v C3B)
+C2W --> (C1Y v C1B v C3Y v C3B)
+C2B --> (C1Y v C1W v C3Y v C3W)
+C3Y --> (C1W v C1B v C2W v C2B)
+C3W --> (C1Y v C1B v C2Y v C2B)
+C3B --> (C1Y v C1W v C2Y v C2W)

@@ -1,0 +1,29 @@
+// ~Observation CNF
+~O1Y v C1Y v C1B
+~O1W v C1W v C1B
+~O2Y v C2Y v C2B
+~O2W v C2W v C2B
+~O3Y v C3Y v C3B
+~O3W v C3W v C3B
+
+// ~Label CNF
+~L1Y v C1W v C1B
+~L1W v C1Y v C1B
+~L1B v C1Y v C1W
+~L2Y v C2W v C2B
+~L2W v C2Y v C2B
+~L2B v C2Y v C2W
+~L3Y v C3W v C3B
+~L3W v C3Y v C3B
+~L3B v C3Y v C3W
+
+// Content CNF
+~C1Y v C2W v C2B v C3W v C3B
+~C1W v C2Y v C2B v C3Y v C3B
+~C1B v C2Y v C2W v C3Y v C3W
+~C2Y v C1W v C1B v C3W v C3B
+~C2W v C1Y v C1B v C3Y v C3B
+~C2B v C1Y v C1W v C3Y v C3W
+~C3Y v C1W v C1B v C2W v C2B
+~C3W v C1Y v C1B v C2Y v C2B
+~C3B v C1Y v C1W v C2Y v C2W
