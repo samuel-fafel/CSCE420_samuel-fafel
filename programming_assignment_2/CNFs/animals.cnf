@@ -1,0 +1,24 @@
+# dogFido
+dogFido
+
+# (not barkFido)
+-barkFido
+
+# (or wagFido barkFido (not awakeFido))
+wagFido barkFido -awakeFido
+
+# (-> dogFido mammalFido)
+-dogFido mammalFido
+
+# (-> (or on_A_B (and on_A_C on_C_B)) above_A_B)
+-on_A_B above_A_B
+-on_A_C -on_C_B above_A_B
+
+# (<-> rainy (not sunny))
+-rainy -sunny
+sunny rainy
+
+# (xor dogFido catFido)
+dogFido -catFido
+catFido -dogFido
+
