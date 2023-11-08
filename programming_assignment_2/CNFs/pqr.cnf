@@ -1,0 +1,12 @@
+# (-> (not P) (not Q))
+P -Q
+
+# (-> (not Q) R)
+Q R
+
+# R
+R
+
+# (not P)
+-P
+

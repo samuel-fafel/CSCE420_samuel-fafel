@@ -1,0 +1,3 @@
+(-> (not P) (not Q))
+(-> (not Q) R)
+R
