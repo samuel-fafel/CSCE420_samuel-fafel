@@ -1,4 +1,5 @@
 import sys
+num_recursions = 0
 
 def extract_CNF(cnf_filename, literals):
     """Extracts the clauses and model from the file.
@@ -171,7 +172,7 @@ def find_unit_clause(clauses, model):
     
     return None, None  # If no unit clause is found, return None
 
-def DPLL(clauses, symbols, model, UCH, depth=0, verbose=False):
+def DPLL(clauses, given_symbols, given_model, UCH, depth=0, verbose=False):
     """Evaluates a set of clauses against a given model and attempts to satisfy all clauses
 
         Args:
@@ -185,12 +186,20 @@ def DPLL(clauses, symbols, model, UCH, depth=0, verbose=False):
         Returns:
             bool: True or False for Satisfiability
         """
+    model = given_model.copy()
+    symbols = given_symbols.copy()
+    global num_recursions
+    num_recursions += 1
     
     # Check if every clause in clauses is true in model
     all_satisfied = all(evaluate_clause(clause, model) for clause in clauses)
     if verbose: print(f"Are all satisfied? {all_satisfied}")
     if all_satisfied:
         if verbose: print(f"\tBASE CASE 1: ALL TRUE -- Depth {depth}\n\n")
+        key_list = list(model.keys())
+        key_list.sort()
+        for symbol in key_list:
+            print(symbol, model[symbol])
         return True
     
     # Check if any clause in clauses is false in model
@@ -253,12 +262,10 @@ if __name__ == "__main__":
         if Bool == None: 
             symbols.add(symbol)
 
+    print('------ MODEL ------')
     satisfied = DPLL(clauses, symbols, model, UCH, verbose=False)
-    print('---------------')
-    print(f"SATISFIED: {satisfied}")
-    key_list = list(model.keys())
-    key_list.sort()
-    for symbol in key_list:
-        print(symbol, model[symbol])
-
+    print('-------------------')
+    print(f"SATISFIED: {satisfied}" if satisfied else "Unsatisfiable")
+    print(f"NUMBER OF RECURSIONS: {num_recursions}")
+    print('-------------------')
 

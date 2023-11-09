@@ -1,341 +1,276 @@
 # # Constraints that no two adjacent states can have the same color
 # # RED
-# (-> WA_R (not NT_R))
--WA_R -NT_R
+# (-> WAR (and (not NTR) (not SAR)))
+-NTR -WAR
+-SAR -WAR
 
-# (-> WA_R (not SA_R))
--WA_R -SA_R
+# (-> SAR (and (not NTR) (not QR) (not NSWR) (not VR) (not WAR)))
+-NTR -SAR
+-QR -SAR
+-NSWR -SAR
+-VR -SAR
+-WAR -SAR
 
-# 
-# (-> SA_R (not NT_R))
--SA_R -NT_R
+# (-> NTR (and (not QR) (not SAR) (not WAR)))
+-QR -NTR
+-SAR -NTR
+-WAR -NTR
 
-# (-> SA_R (not Q_R))
--SA_R -Q_R
+# (-> QR (and (not NSWR) (not SAR) (not NTR)))
+-NSWR -QR
+-SAR -QR
+-NTR -QR
 
-# (-> SA_R (not NSW_R))
--SA_R -NSW_R
+# (-> NSWR (and (not QR) (not VR) (not SAR)))
+-QR -NSWR
+-VR -NSWR
+-SAR -NSWR
 
-# (-> SA_R (not V_R))
--SA_R -V_R
-
-# (-> SA_R (not WA_R))
--SA_R -WA_R
-
-# 
-# (-> NT_R (not Q_R))
--NT_R -Q_R
-
-# (-> NT_R (not SA_R))
--NT_R -SA_R
-
-# (-> NT_R (not WA_R))
--NT_R -WA_R
-
-# 
-# (-> Q_R (not NSW_R))
--Q_R -NSW_R
-
-# (-> Q_R (not SA_R))
--Q_R -SA_R
-
-# (-> Q_R (not NT_R))
--Q_R -NT_R
-
-# 
-# (-> NSW_R (not Q_R))
--NSW_R -Q_R
-
-# (-> NSW_R (not V_R))
--NSW_R -V_R
-
-# (-> NSW_R (not SA_R))
--NSW_R -SA_R
-
-# 
-# (-> V_R (not NSW_R))
--V_R -NSW_R
-
-# (-> V_R (not SA_R))
--V_R -SA_R
+# (-> VR (and (not NSWR) (not SAR)))
+-NSWR -VR
+-SAR -VR
 
 # 
 # # GREEN
-# (-> WA_G (not NT_G))
--WA_G -NT_G
+# (-> WAG (and (not NTG) (not SAG)))
+-NTG -WAG
+-SAG -WAG
 
-# (-> WA_G (not SA_G))
--WA_G -SA_G
+# (-> SAG (and (not NTG) (not QG) (not NSWG) (not VG) (not WAG)))
+-NTG -SAG
+-QG -SAG
+-NSWG -SAG
+-VG -SAG
+-WAG -SAG
 
-# 
-# (-> SA_G (not NT_G))
--SA_G -NT_G
+# (-> NTG (and (not QG) (not SAG) (not WAG)))
+-QG -NTG
+-SAG -NTG
+-WAG -NTG
 
-# (-> SA_G (not Q_G))
--SA_G -Q_G
+# (-> QG (and (not NSWG) (not SAG) (not NTG)))
+-NSWG -QG
+-SAG -QG
+-NTG -QG
 
-# (-> SA_G (not NSW_G))
--SA_G -NSW_G
+# (-> NSWG (and (not QG) (not VG) (not SAG)))
+-QG -NSWG
+-VG -NSWG
+-SAG -NSWG
 
-# (-> SA_G (not V_G))
--SA_G -V_G
-
-# (-> SA_G (not WA_G))
--SA_G -WA_G
-
-# 
-# (-> NT_G (not Q_G))
--NT_G -Q_G
-
-# (-> NT_G (not SA_G))
--NT_G -SA_G
-
-# (-> NT_G (not WA_G))
--NT_G -WA_G
-
-# 
-# (-> Q_G (not NSW_G))
--Q_G -NSW_G
-
-# (-> Q_G (not SA_G))
--Q_G -SA_G
-
-# (-> Q_G (not NT_G))
--Q_G -NT_G
-
-# 
-# (-> NSW_G (not Q_G))
--NSW_G -Q_G
-
-# (-> NSW_G (not V_G))
--NSW_G -V_G
-
-# (-> NSW_G (not SA_G))
--NSW_G -SA_G
-
-# 
-# (-> V_G (not NSW_G))
--V_G -NSW_G
-
-# (-> V_G (not SA_G))
--V_G -SA_G
+# (-> VG (and (not NSWG) (not SAG)))
+-NSWG -VG
+-SAG -VG
 
 # 
 # # BLUE
-# (-> WA_B (not NT_B))
--WA_B -NT_B
+# (-> WAB (and (not NTB) (not SAB)))
+-NTB -WAB
+-SAB -WAB
 
-# (-> WA_B (not SA_B))
--WA_B -SA_B
+# (-> SAB (and (not NTB) (not QB) (not NSWB) (not VB) (not WAB)))
+-NTB -SAB
+-QB -SAB
+-NSWB -SAB
+-VB -SAB
+-WAB -SAB
 
-# 
-# (-> SA_B (not NT_B))
--SA_B -NT_B
+# (-> NTB (and (not QB) (not SAB) (not WAB)))
+-QB -NTB
+-SAB -NTB
+-WAB -NTB
 
-# (-> SA_B (not Q_B))
--SA_B -Q_B
+# (-> QB (and (not NSWB) (not SAB) (not NTB)))
+-NSWB -QB
+-SAB -QB
+-NTB -QB
 
-# (-> SA_B (not NSW_B))
--SA_B -NSW_B
+# (-> NSWB (and (not QB) (not VB) (not SAB)))
+-QB -NSWB
+-VB -NSWB
+-SAB -NSWB
 
-# (-> SA_B (not V_B))
--SA_B -V_B
-
-# (-> SA_B (not WA_B))
--SA_B -WA_B
-
-# 
-# (-> NT_B (not Q_B))
--NT_B -Q_B
-
-# (-> NT_B (not SA_B))
--NT_B -SA_B
-
-# (-> NT_B (not WA_B))
--NT_B -WA_B
-
-# 
-# (-> Q_B (not NSW_B))
--Q_B -NSW_B
-
-# (-> Q_B (not SA_B))
--Q_B -SA_B
-
-# (-> Q_B (not NT_B))
--Q_B -NT_B
-
-# 
-# (-> NSW_B (not Q_B))
--NSW_B -Q_B
-
-# (-> NSW_B (not V_B))
--NSW_B -V_B
-
-# (-> NSW_B (not SA_B))
--NSW_B -SA_B
-
-# 
-# (-> V_B (not NSW_B))
--V_B -NSW_B
-
-# (-> V_B (not SA_B))
--V_B -SA_B
-
-# 
-# # Each state must have at least one color
-# (or WA_R WA_G WA_B)
-WA_R WA_G WA_B
-
-# (or NT_R NT_G NT_B)
-NT_R NT_G NT_B
-
-# (or SA_R SA_G SA_B)
-SA_R SA_G SA_B
-
-# (or Q_R Q_G Q_B)
-Q_R Q_G Q_B
-
-# (or NSW_R NSW_G NSW_B)
-NSW_R NSW_G NSW_B
-
-# (or V_R V_G V_B)
-V_R V_G V_B
-
-# (or T_R T_G T_B)
-T_R T_G T_B
+# (-> VB (and (not NSWB) (not SAB)))
+-NSWB -VB
+-SAB -VB
 
 # 
 # # Each state can have only one color
-# (-> WA_R (not WA_G))
--WA_R -WA_G
+# (-> WAR (and (not WAG) (not WAB)))
+-WAG -WAR
+-WAB -WAR
 
-# (-> WA_R (not WA_B))
--WA_R -WA_B
+# (-> WAG (and (not WAR) (not WAB)))
+-WAR -WAG
+-WAB -WAG
 
-# (-> WA_G (not WA_R))
--WA_G -WA_R
-
-# (-> WA_G (not WA_B))
--WA_G -WA_B
-
-# (-> WA_B (not WA_R))
--WA_B -WA_R
-
-# (-> WA_B (not WA_G))
--WA_B -WA_G
+# (-> WAB (and (not WAR) (not WAG)))
+-WAR -WAB
+-WAG -WAB
 
 # 
-# (-> NT_R (not NT_G))
--NT_R -NT_G
+# (-> NTR (and (not NTG) (not NTB)))
+-NTG -NTR
+-NTB -NTR
 
-# (-> NT_R (not NT_B))
--NT_R -NT_B
+# (-> NTG (and (not NTR) (not NTB)))
+-NTR -NTG
+-NTB -NTG
 
-# (-> NT_G (not NT_R))
--NT_G -NT_R
-
-# (-> NT_G (not NT_B))
--NT_G -NT_B
-
-# (-> NT_B (not NT_R))
--NT_B -NT_R
-
-# (-> NT_B (not NT_G))
--NT_B -NT_G
+# (-> NTB (and (not NTR) (not NTG)))
+-NTR -NTB
+-NTG -NTB
 
 # 
-# (-> SA_R (not SA_G))
--SA_R -SA_G
+# (-> SAR (and (not SAG) (not SAB)))
+-SAG -SAR
+-SAB -SAR
 
-# (-> SA_R (not SA_B))
--SA_R -SA_B
+# (-> SAG (and (not SAR) (not SAB)))
+-SAR -SAG
+-SAB -SAG
 
-# (-> SA_G (not SA_R))
--SA_G -SA_R
-
-# (-> SA_G (not SA_B))
--SA_G -SA_B
-
-# (-> SA_B (not SA_R))
--SA_B -SA_R
-
-# (-> SA_B (not SA_G))
--SA_B -SA_G
+# (-> SAB (and (not SAR) (not SAG)))
+-SAR -SAB
+-SAG -SAB
 
 # 
-# (-> Q_R (not Q_G))
--Q_R -Q_G
+# (-> QR (and (not QG) (not QB)))
+-QG -QR
+-QB -QR
 
-# (-> Q_R (not Q_B))
--Q_R -Q_B
+# (-> QG (and (not QR) (not QB)))
+-QR -QG
+-QB -QG
 
-# (-> Q_G (not Q_R))
--Q_G -Q_R
-
-# (-> Q_G (not Q_B))
--Q_G -Q_B
-
-# (-> Q_B (not Q_R))
--Q_B -Q_R
-
-# (-> Q_B (not Q_G))
--Q_B -Q_G
+# (-> QB (and (not QR) (not QG)))
+-QR -QB
+-QG -QB
 
 # 
-# (-> NSW_R (not NSW_G))
--NSW_R -NSW_G
+# (-> NSWR (and (not NSWG) (not NSWB)))
+-NSWG -NSWR
+-NSWB -NSWR
 
-# (-> NSW_R (not NSW_B))
--NSW_R -NSW_B
+# (-> NSWG (and (not NSWR) (not NSWB)))
+-NSWR -NSWG
+-NSWB -NSWG
 
-# (-> NSW_G (not NSW_R))
--NSW_G -NSW_R
-
-# (-> NSW_G (not NSW_B))
--NSW_G -NSW_B
-
-# (-> NSW_B (not NSW_R))
--NSW_B -NSW_R
-
-# (-> NSW_B (not NSW_G))
--NSW_B -NSW_G
+# (-> NSWB (and (not NSWR) (not NSWG)))
+-NSWR -NSWB
+-NSWG -NSWB
 
 # 
-# (-> V_R (not V_G))
--V_R -V_G
+# (-> VR (and (not VG) (not VB)))
+-VG -VR
+-VB -VR
 
-# (-> V_R (not V_B))
--V_R -V_B
+# (-> VG (and (not VR) (not VB)))
+-VR -VG
+-VB -VG
 
-# (-> V_G (not V_R))
--V_G -V_R
-
-# (-> V_G (not V_B))
--V_G -V_B
-
-# (-> V_B (not V_R))
--V_B -V_R
-
-# (-> V_B (not V_G))
--V_B -V_G
+# (-> VB (and (not VR) (not VG)))
+-VR -VB
+-VG -VB
 
 # 
-# (-> T_R (not T_G))
--T_R -T_G
+# (-> TR (and (not TG) (not TB)))
+-TG -TR
+-TB -TR
 
-# (-> T_R (not T_B))
--T_R -T_B
+# (-> TG (and (not TR) (not TB)))
+-TR -TG
+-TB -TG
 
-# (-> T_G (not T_R))
--T_G -T_R
+# (-> TB (and (not TR) (not TG)))
+-TR -TB
+-TG -TB
 
-# (-> T_G (not T_B))
--T_G -T_B
+# 
+# # Specific Notes
+# (<-> WAR (and QR VR))
+QR -WAR
+VR -WAR
+-QR -VR WAR
 
-# (-> T_B (not T_R))
--T_B -T_R
+# (<-> WAG (and QG VG))
+QG -WAG
+VG -WAG
+-QG -VG WAG
 
-# (-> T_B (not T_G))
--T_B -T_G
+# (<-> WAB (and QB VB))
+QB -WAB
+VB -WAB
+-QB -VB WAB
+
+# 
+# (<-> VR (and QR WAR))
+QR -VR
+WAR -VR
+-QR -WAR VR
+
+# (<-> VG (and QG WAG))
+QG -VG
+WAG -VG
+-QG -WAG VG
+
+# (<-> VB (and QB WAB))
+QB -VB
+WAB -VB
+-QB -WAB VB
+
+# 
+# (<-> QR (and VR WAR))
+VR -QR
+WAR -QR
+-VR -WAR QR
+
+# (<-> QG (and VG WAG))
+VG -QG
+WAG -QG
+-VG -WAG QG
+
+# (<-> QB (and VB WAB))
+VB -QB
+WAB -QB
+-VB -WAB QB
+
+# 
+# (<-> NTR NSWR)
+-NTR NSWR
+-NSWR NTR
+
+# (<-> NTG NSWG)
+-NTG NSWG
+-NSWG NTG
+
+# (<-> NTB NSWB)
+-NTB NSWB
+-NSWB NTB
+
+# 
+# # Each state must have at least one color
+# (or WAR WAG WAB)
+WAR WAG WAB
+
+# (or NTR NTG NTB)
+NTR NTG NTB
+
+# (or SAR SAG SAB)
+SAR SAG SAB
+
+# (or QR QG QB)
+QR QG QB
+
+# (or NSWR NSWG NSWB)
+NSWR NSWG NSWB
+
+# (or VR VG VB)
+VR VG VB
+
+# (or TR TG TB)
+TR TG TB
 
 # APPENDIX:
+QG
+VB
