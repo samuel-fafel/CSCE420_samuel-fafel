@@ -19,6 +19,8 @@ wagFido barkFido -awakeFido
 sunny rainy
 
 # (xor dogFido catFido)
-dogFido -catFido
-catFido -dogFido
+catFido dogFido
+-dogFido dogFido
+catFido -catFido
+-dogFido -catFido
 

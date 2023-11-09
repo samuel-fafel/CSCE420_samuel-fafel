@@ -1,0 +1,154 @@
+# ; Define the states
+;
+
+# stateWA
+stateWA
+
+# stateNT
+stateNT
+
+# stateSA
+stateSA
+
+# stateQ
+stateQ
+
+# stateNSW
+stateNSW
+
+# stateV
+stateV
+
+# stateT
+stateT
+
+# 
+# ; Define the colors
+;
+
+# colorC1
+colorC1
+
+# colorC2
+colorC2
+
+# colorC3
+colorC3
+
+# 
+# ; Constraints that no two adjacent states can have the same color
+;
+
+# (not (and colorWA_C1 colorNT_C1))
+-colorWA_C1 -colorNT_C1
+
+# (not (and colorWA_C1 colorSA_C1))
+-colorWA_C1 -colorSA_C1
+
+# (not (and colorSA_C1 colorNT_C1))
+-colorSA_C1 -colorNT_C1
+
+# (not (and colorSA_C1 colorQ_C1))
+-colorSA_C1 -colorQ_C1
+
+# (not (and colorSA_C1 colorNSW_C1))
+-colorSA_C1 -colorNSW_C1
+
+# (not (and colorSA_C1 colorV_C1))
+-colorSA_C1 -colorV_C1
+
+# (not (and colorNT_C1 colorQ_C1))
+-colorNT_C1 -colorQ_C1
+
+# (not (and colorQ_C1 colorNSW_C1))
+-colorQ_C1 -colorNSW_C1
+
+# (not (and colorNSW_C1 colorV_C1))
+-colorNSW_C1 -colorV_C1
+
+# 
+# (not (and colorWA_C2 colorNT_C2))
+-colorWA_C2 -colorNT_C2
+
+# (not (and colorWA_C2 colorSA_C2))
+-colorWA_C2 -colorSA_C2
+
+# (not (and colorSA_C2 colorNT_C2))
+-colorSA_C2 -colorNT_C2
+
+# (not (and colorSA_C2 colorQ_C2))
+-colorSA_C2 -colorQ_C2
+
+# (not (and colorSA_C2 colorNSW_C2))
+-colorSA_C2 -colorNSW_C2
+
+# (not (and colorSA_C2 colorV_C2))
+-colorSA_C2 -colorV_C2
+
+# (not (and colorNT_C2 colorQ_C2))
+-colorNT_C2 -colorQ_C2
+
+# (not (and colorQ_C2 colorNSW_C2))
+-colorQ_C2 -colorNSW_C2
+
+# (not (and colorNSW_C2 colorV_C2))
+-colorNSW_C2 -colorV_C2
+
+# 
+# (not (and colorWA_C3 colorNT_C3))
+-colorWA_C3 -colorNT_C3
+
+# (not (and colorWA_C3 colorSA_C3))
+-colorWA_C3 -colorSA_C3
+
+# (not (and colorSA_C3 colorNT_C3))
+-colorSA_C3 -colorNT_C3
+
+# (not (and colorSA_C3 colorQ_C3))
+-colorSA_C3 -colorQ_C3
+
+# (not (and colorSA_C3 colorNSW_C3))
+-colorSA_C3 -colorNSW_C3
+
+# (not (and colorSA_C3 colorV_C3))
+-colorSA_C3 -colorV_C3
+
+# (not (and colorNT_C3 colorQ_C3))
+-colorNT_C3 -colorQ_C3
+
+# (not (and colorQ_C3 colorNSW_C3))
+-colorQ_C3 -colorNSW_C3
+
+# (not (and colorNSW_C3 colorV_C3))
+-colorNSW_C3 -colorV_C3
+
+# 
+# ; Each state must have at least one color
+;
+
+# (or colorWA_C1 colorWA_C2 colorWA_C3)
+colorWA_C1 colorWA_C2 colorWA_C3
+
+# (or colorNT_C1 colorNT_C2 colorNT_C3)
+colorNT_C1 colorNT_C2 colorNT_C3
+
+# (or colorSA_C1 colorSA_C2 colorSA_C3)
+colorSA_C1 colorSA_C2 colorSA_C3
+
+# (or colorQ_C1 colorQ_C2 colorQ_C3)
+colorQ_C1 colorQ_C2 colorQ_C3
+
+# (or colorNSW_C1 colorNSW_C2 colorNSW_C3)
+colorNSW_C1 colorNSW_C2 colorNSW_C3
+
+# (or colorV_C1 colorV_C2 colorV_C3)
+colorV_C1 colorV_C2 colorV_C3
+
+# (or colorT_C1 colorT_C2 colorT_C3)
+colorT_C1 colorT_C2 colorT_C3
+
+# 
+# ; Each state can have only one color
+;
+
+# (xor colorWA_C1 colorWA_C2 colorWA_C3)

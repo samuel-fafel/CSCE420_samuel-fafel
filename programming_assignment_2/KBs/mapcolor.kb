@@ -1,0 +1,134 @@
+# Constraints that no two adjacent states can have the same color
+# RED
+(-> WA_R (not NT_R))
+(-> WA_R (not SA_R))
+
+(-> SA_R (not NT_R))
+(-> SA_R (not Q_R))
+(-> SA_R (not NSW_R))
+(-> SA_R (not V_R))
+(-> SA_R (not WA_R))
+
+(-> NT_R (not Q_R))
+(-> NT_R (not SA_R))
+(-> NT_R (not WA_R))
+
+(-> Q_R (not NSW_R))
+(-> Q_R (not SA_R))
+(-> Q_R (not NT_R))
+
+(-> NSW_R (not Q_R))
+(-> NSW_R (not V_R))
+(-> NSW_R (not SA_R))
+
+(-> V_R (not NSW_R))
+(-> V_R (not SA_R))
+
+# GREEN
+(-> WA_G (not NT_G))
+(-> WA_G (not SA_G))
+
+(-> SA_G (not NT_G))
+(-> SA_G (not Q_G))
+(-> SA_G (not NSW_G))
+(-> SA_G (not V_G))
+(-> SA_G (not WA_G))
+
+(-> NT_G (not Q_G))
+(-> NT_G (not SA_G))
+(-> NT_G (not WA_G))
+
+(-> Q_G (not NSW_G))
+(-> Q_G (not SA_G))
+(-> Q_G (not NT_G))
+
+(-> NSW_G (not Q_G))
+(-> NSW_G (not V_G))
+(-> NSW_G (not SA_G))
+
+(-> V_G (not NSW_G))
+(-> V_G (not SA_G))
+
+# BLUE
+(-> WA_B (not NT_B))
+(-> WA_B (not SA_B))
+
+(-> SA_B (not NT_B))
+(-> SA_B (not Q_B))
+(-> SA_B (not NSW_B))
+(-> SA_B (not V_B))
+(-> SA_B (not WA_B))
+
+(-> NT_B (not Q_B))
+(-> NT_B (not SA_B))
+(-> NT_B (not WA_B))
+
+(-> Q_B (not NSW_B))
+(-> Q_B (not SA_B))
+(-> Q_B (not NT_B))
+
+(-> NSW_B (not Q_B))
+(-> NSW_B (not V_B))
+(-> NSW_B (not SA_B))
+
+(-> V_B (not NSW_B))
+(-> V_B (not SA_B))
+
+# Each state must have at least one color
+(or WA_R WA_G WA_B)
+(or NT_R NT_G NT_B)
+(or SA_R SA_G SA_B)
+(or Q_R Q_G Q_B)
+(or NSW_R NSW_G NSW_B)
+(or V_R V_G V_B)
+(or T_R T_G T_B)
+
+# Each state can have only one color
+(-> WA_R (not WA_G))
+(-> WA_R (not WA_B))
+(-> WA_G (not WA_R))
+(-> WA_G (not WA_B))
+(-> WA_B (not WA_R))
+(-> WA_B (not WA_G))
+
+(-> NT_R (not NT_G))
+(-> NT_R (not NT_B))
+(-> NT_G (not NT_R))
+(-> NT_G (not NT_B))
+(-> NT_B (not NT_R))
+(-> NT_B (not NT_G))
+
+(-> SA_R (not SA_G))
+(-> SA_R (not SA_B))
+(-> SA_G (not SA_R))
+(-> SA_G (not SA_B))
+(-> SA_B (not SA_R))
+(-> SA_B (not SA_G))
+
+(-> Q_R (not Q_G))
+(-> Q_R (not Q_B))
+(-> Q_G (not Q_R))
+(-> Q_G (not Q_B))
+(-> Q_B (not Q_R))
+(-> Q_B (not Q_G))
+
+(-> NSW_R (not NSW_G))
+(-> NSW_R (not NSW_B))
+(-> NSW_G (not NSW_R))
+(-> NSW_G (not NSW_B))
+(-> NSW_B (not NSW_R))
+(-> NSW_B (not NSW_G))
+
+(-> V_R (not V_G))
+(-> V_R (not V_B))
+(-> V_G (not V_R))
+(-> V_G (not V_B))
+(-> V_B (not V_R))
+(-> V_B (not V_G))
+
+(-> T_R (not T_G))
+(-> T_R (not T_B))
+(-> T_G (not T_R))
+(-> T_G (not T_B))
+(-> T_B (not T_R))
+(-> T_B (not T_G))

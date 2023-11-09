@@ -1,0 +1,224 @@
+# #Labels are Incorrect
+# (-> L1Y (not C1Y))
+-L1Y -C1Y
+
+# (-> L1W (not C1W))
+-L1W -C1W
+
+# (-> L1B (not C1B))
+-L1B -C1B
+
+# (-> L2Y (not C2Y))
+-L2Y -C2Y
+
+# (-> L2W (not C2W))
+-L2W -C2W
+
+# (-> L2B (not C2B))
+-L2B -C2B
+
+# (-> L3Y (not C3Y))
+-L3Y -C3Y
+
+# (-> L3W (not C3W))
+-L3W -C3W
+
+# (-> L3B (not C3B))
+-L3B -C3B
+
+# 
+# #Observed Color, Not Observe Other Color
+# (-> O1Y (not O1W))
+-O1Y -O1W
+
+# (-> O2Y (not O2W))
+-O2Y -O2W
+
+# (-> O3Y (not O3W))
+-O3Y -O3W
+
+# (-> O1W (not O1Y))
+-O1W -O1Y
+
+# (-> O2W (not O2Y))
+-O2W -O2Y
+
+# (-> O3W (not O3Y))
+-O3W -O3Y
+
+# 
+# #Observed Color, Not Contain Opposite Color
+# (-> O1Y (not C1W))
+-O1Y -C1W
+
+# (-> O2Y (not C2W))
+-O2Y -C2W
+
+# (-> O3Y (not C3W))
+-O3Y -C3W
+
+# (-> O1W (not C1Y))
+-O1W -C1Y
+
+# (-> O2W (not C2Y))
+-O2W -C2Y
+
+# (-> O3W (not C3Y))
+-O3W -C3Y
+
+# 
+# #Labeled Color, Not Labeled Other Colors
+# (-> L1Y (not L1W))
+-L1Y -L1W
+
+# (-> L1Y (not L1B))
+-L1Y -L1B
+
+# (-> L2Y (not L2W))
+-L2Y -L2W
+
+# (-> L2Y (not L2B))
+-L2Y -L2B
+
+# (-> L3Y (not L3W))
+-L3Y -L3W
+
+# (-> L3Y (not L3B))
+-L3Y -L3B
+
+# 
+# (-> L1W (not L1Y))
+-L1W -L1Y
+
+# (-> L1W (not L1B))
+-L1W -L1B
+
+# (-> L2W (not L2Y))
+-L2W -L2Y
+
+# (-> L2W (not L2B))
+-L2W -L2B
+
+# (-> L3W (not L3Y))
+-L3W -L3Y
+
+# (-> L3W (not L3B))
+-L3W -L3B
+
+# 
+# (-> L1B (not L1Y))
+-L1B -L1Y
+
+# (-> L1B (not L1W))
+-L1B -L1W
+
+# (-> L2B (not L2Y))
+-L2B -L2Y
+
+# (-> L2B (not L2W))
+-L2B -L2W
+
+# (-> L3B (not L3Y))
+-L3B -L3Y
+
+# (-> L3B (not L3W))
+-L3B -L3W
+
+# 
+# #Contain Color, Not Contain Other Colors
+# (-> C1Y (and (not C1W) (not C1B)))
+-C1W -C1Y
+-C1B -C1Y
+
+# (-> C2Y (and (not C2W) (not C2B)))
+-C2W -C2Y
+-C2B -C2Y
+
+# (-> C3Y (and (not C3W) (not C3B)))
+-C3W -C3Y
+-C3B -C3Y
+
+# 
+# (-> C1W (and (not C1Y) (not C1B)))
+-C1Y -C1W
+-C1B -C1W
+
+# (-> C2W (and (not C2Y) (not C2B)))
+-C2Y -C2W
+-C2B -C2W
+
+# (-> C3W (and (not C3Y) (not C3B)))
+-C3Y -C3W
+-C3B -C3W
+
+# 
+# (-> C1B (and (not C1Y) (not C1W)))
+-C1Y -C1B
+-C1W -C1B
+
+# (-> C2B (and (not C2Y) (not C2W)))
+-C2Y -C2B
+-C2W -C2B
+
+# (-> C3B (and (not C3Y) (not C3W)))
+-C3Y -C3B
+-C3W -C3B
+
+# 
+# #Exclusive Contents of Boxes (No two boxes of the same contents)
+# (-> C1Y (and (not C2Y) (not C3Y)))
+-C2Y -C1Y
+-C3Y -C1Y
+
+# (-> C2Y (and (not C1Y) (not C3Y)))
+-C1Y -C2Y
+-C3Y -C2Y
+
+# (-> C3Y (and (not C1Y) (not C2Y)))
+-C1Y -C3Y
+-C2Y -C3Y
+
+# 
+# (-> C1W (and (not C2W) (not C3W)))
+-C2W -C1W
+-C3W -C1W
+
+# (-> C2W (and (not C1W) (not C3W)))
+-C1W -C2W
+-C3W -C2W
+
+# (-> C3W (and (not C1W) (not C2W)))
+-C1W -C3W
+-C2W -C3W
+
+# 
+# (-> C1B (and (not C2B) (not C3B)))
+-C2B -C1B
+-C3B -C1B
+
+# (-> C2B (and (not C1B) (not C3B)))
+-C1B -C2B
+-C3B -C2B
+
+# (-> C3B (and (not C1B) (not C2B)))
+-C1B -C3B
+-C2B -C3B
+
+# 
+# #Boxes must contain something
+# (or C1Y C1W C1B)
+C1Y C1W C1B
+
+# (or C2Y C2W C2B)
+C2Y C2W C2B
+
+# (or C3Y C3W C3B)
+C3Y C3W C3B
+
+# APPENDIX:
+O1Y
+O2W
+O3Y
+L1W
+L2Y
+L3B

@@ -1,0 +1,79 @@
+#Labels are Incorrect
+(-> L1Y (not C1Y))
+(-> L1W (not C1W))
+(-> L1B (not C1B))
+(-> L2Y (not C2Y))
+(-> L2W (not C2W))
+(-> L2B (not C2B))
+(-> L3Y (not C3Y))
+(-> L3W (not C3W))
+(-> L3B (not C3B))
+
+#Observed Color, Not Observe Other Color
+(-> O1Y (not O1W))
+(-> O2Y (not O2W))
+(-> O3Y (not O3W))
+(-> O1W (not O1Y))
+(-> O2W (not O2Y))
+(-> O3W (not O3Y))
+
+#Observed Color, Not Contain Opposite Color
+(-> O1Y (not C1W))
+(-> O2Y (not C2W))
+(-> O3Y (not C3W))
+(-> O1W (not C1Y))
+(-> O2W (not C2Y))
+(-> O3W (not C3Y))
+
+#Labeled Color, Not Labeled Other Colors
+(-> L1Y (not L1W))
+(-> L1Y (not L1B))
+(-> L2Y (not L2W))
+(-> L2Y (not L2B))
+(-> L3Y (not L3W))
+(-> L3Y (not L3B))
+
+(-> L1W (not L1Y))
+(-> L1W (not L1B))
+(-> L2W (not L2Y))
+(-> L2W (not L2B))
+(-> L3W (not L3Y))
+(-> L3W (not L3B))
+
+(-> L1B (not L1Y))
+(-> L1B (not L1W))
+(-> L2B (not L2Y))
+(-> L2B (not L2W))
+(-> L3B (not L3Y))
+(-> L3B (not L3W))
+
+#Contain Color, Not Contain Other Colors
+(-> C1Y (and (not C1W) (not C1B)))
+(-> C2Y (and (not C2W) (not C2B)))
+(-> C3Y (and (not C3W) (not C3B)))
+
+(-> C1W (and (not C1Y) (not C1B)))
+(-> C2W (and (not C2Y) (not C2B)))
+(-> C3W (and (not C3Y) (not C3B)))
+
+(-> C1B (and (not C1Y) (not C1W)))
+(-> C2B (and (not C2Y) (not C2W)))
+(-> C3B (and (not C3Y) (not C3W)))
+
+#Exclusive Contents of Boxes (No two boxes of the same contents)
+(-> C1Y (and (not C2Y) (not C3Y)))
+(-> C2Y (and (not C1Y) (not C3Y)))
+(-> C3Y (and (not C1Y) (not C2Y)))
+
+(-> C1W (and (not C2W) (not C3W)))
+(-> C2W (and (not C1W) (not C3W)))
+(-> C3W (and (not C1W) (not C2W)))
+
+(-> C1B (and (not C2B) (not C3B)))
+(-> C2B (and (not C1B) (not C3B)))
+(-> C3B (and (not C1B) (not C2B)))
+
+#Boxes must contain something
+(or C1Y C1W C1B)
+(or C2Y C2W C2B)
+(or C3Y C3W C3B)
