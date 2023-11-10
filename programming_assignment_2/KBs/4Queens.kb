@@ -1,0 +1,74 @@
+# Must be Queen in Every Column
+(or Q11 Q12 Q13 Q14)
+(or Q21 Q22 Q23 Q24)
+(or Q31 Q32 Q33 Q34)
+(or Q41 Q42 Q43 Q44)
+
+# Must be Queen in Every Row
+(or Q11 Q21 Q31 Q41)
+(or Q12 Q22 Q32 Q42)
+(or Q13 Q23 Q33 Q43)
+(or Q14 Q24 Q34 Q44)
+
+# Not Multiple Queens in Column 1
+(not (and Q11 (or Q12 Q13 Q14)))
+(not (and Q12 (or Q13 Q14)))
+(not (and Q13 (or Q14)))
+
+# Not Multiple Queens in Column 2
+(not (and Q21 (or Q22 Q23 Q24)))
+(not (and Q22 (or Q23 Q24)))
+(not (and Q23 (or Q24)))
+
+# Not Multiple Queens in Column 3
+(not (and Q31 (or Q32 Q33 Q34)))
+(not (and Q32 (or Q33 Q34)))
+(not (and Q33 (or Q34)))
+
+# Not Multiple Queens in Column 4
+(not (and Q41 (or Q42 Q43 Q44)))
+(not (and Q42 (or Q43 Q44)))
+(not (and Q43 (or Q44)))
+
+# Not Multiple Queens in Row 1
+(not (and Q11 (or Q21 Q31 Q41)))
+(not (and Q21 (or Q31 Q41)))
+(not (and Q31 (or Q41)))
+
+# Not Multiple Queens in Row 2
+(not (and Q12 (or Q22 Q32 Q42)))
+(not (and Q22 (or Q32 Q42)))
+(not (and Q32 (or Q42)))
+
+# Not Multiple Queens in Row 3
+(not (and Q13 (or Q23 Q33 Q43)))
+(not (and Q23 (or Q33 Q43)))
+(not (and Q33 (or Q43)))
+
+# Not Multiple Queens in Row 4
+(not (and Q14 (or Q24 Q34 Q44)))
+(not (and Q24 (or Q34 Q44)))
+(not (and Q34 (or Q44)))
+
+# Not Multiple Queens in Same Right Diagonal
+(not (and Q11 (or Q22 Q33 Q44)))
+(not (and Q12 (or Q23 Q34)))
+(not (and Q13 (or Q24)))
+(not (and Q21 (or Q32 Q43)))
+(not (and Q22 (or Q33 Q44)))
+(not (and Q23 (or Q34)))
+(not (and Q31 (or Q42)))
+(not (and Q32 (or Q43)))
+(not (and Q33 (or Q44)))
+
+# Not Multiple Queens in Same Left Diagonal
+(not (and Q12 (or Q21)))
+(not (and Q22 (or Q31)))
+(not (and Q32 (or Q41)))
+(not (and Q13 (or Q22 Q31)))
+(not (and Q23 (or Q32 Q41)))
+(not (and Q33 (or Q42)))
+(not (and Q14 (or Q23 Q32 Q41)))
+(not (and Q24 (or Q33 Q42)))
+(not (and Q34 (or Q43)))
+

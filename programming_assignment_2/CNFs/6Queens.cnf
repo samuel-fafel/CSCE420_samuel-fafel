@@ -1,0 +1,579 @@
+# # Must be Queen in Every Column
+# (or Q11 Q12 Q13 Q14 Q15 Q16)
+Q11 Q12 Q13 Q14 Q15 Q16
+
+# (or Q21 Q22 Q23 Q24 Q25 Q26)
+Q21 Q22 Q23 Q24 Q25 Q26
+
+# (or Q31 Q32 Q33 Q34 Q35 Q36)
+Q31 Q32 Q33 Q34 Q35 Q36
+
+# (or Q41 Q42 Q43 Q44 Q45 Q46)
+Q41 Q42 Q43 Q44 Q45 Q46
+
+# (or Q51 Q52 Q53 Q54 Q55 Q56)
+Q51 Q52 Q53 Q54 Q55 Q56
+
+# (or Q61 Q62 Q63 Q64 Q65 Q66)
+Q61 Q62 Q63 Q64 Q65 Q66
+
+# 
+# # Must be Queen in Every Row
+# (or Q11 Q21 Q31 Q41 Q51 Q61)
+Q11 Q21 Q31 Q41 Q51 Q61
+
+# (or Q12 Q22 Q32 Q42 Q52 Q62)
+Q12 Q22 Q32 Q42 Q52 Q62
+
+# (or Q13 Q23 Q33 Q43 Q53 Q63)
+Q13 Q23 Q33 Q43 Q53 Q63
+
+# (or Q14 Q24 Q34 Q44 Q54 Q64)
+Q14 Q24 Q34 Q44 Q54 Q64
+
+# (or Q15 Q25 Q35 Q45 Q55 Q65)
+Q15 Q25 Q35 Q45 Q55 Q65
+
+# (or Q16 Q26 Q36 Q46 Q56 Q66)
+Q16 Q26 Q36 Q46 Q56 Q66
+
+# 
+# # Not Multiple Queens in Column 1
+# (not (and Q11 (or Q12 Q13 Q14 Q15 Q16)))
+-Q12 -Q11
+-Q13 -Q11
+-Q14 -Q11
+-Q15 -Q11
+-Q16 -Q11
+
+# (not (and Q12 (or Q13 Q14 Q15 Q16)))
+-Q13 -Q12
+-Q14 -Q12
+-Q15 -Q12
+-Q16 -Q12
+
+# (not (and Q13 (or Q14 Q15 Q16)))
+-Q14 -Q13
+-Q15 -Q13
+-Q16 -Q13
+
+# (not (and Q14 (or Q15 Q16)))
+-Q15 -Q14
+-Q16 -Q14
+
+# (not (and Q15 (or Q16)))
+-Q16 -Q15
+
+# 
+# # Not Multiple Queens in Column 2
+# (not (and Q21 (or Q22 Q23 Q24 Q25 Q26)))
+-Q22 -Q21
+-Q23 -Q21
+-Q24 -Q21
+-Q25 -Q21
+-Q26 -Q21
+
+# (not (and Q22 (or Q23 Q24 Q25 Q26)))
+-Q23 -Q22
+-Q24 -Q22
+-Q25 -Q22
+-Q26 -Q22
+
+# (not (and Q23 (or Q24 Q25 Q26)))
+-Q24 -Q23
+-Q25 -Q23
+-Q26 -Q23
+
+# (not (and Q24 (or Q25 Q26)))
+-Q25 -Q24
+-Q26 -Q24
+
+# (not (and Q25 (or Q26)))
+-Q26 -Q25
+
+# 
+# # Not Multiple Queens in Column 3
+# (not (and Q31 (or Q32 Q33 Q34 Q35 Q36)))
+-Q32 -Q31
+-Q33 -Q31
+-Q34 -Q31
+-Q35 -Q31
+-Q36 -Q31
+
+# (not (and Q32 (or Q33 Q34 Q35 Q36)))
+-Q33 -Q32
+-Q34 -Q32
+-Q35 -Q32
+-Q36 -Q32
+
+# (not (and Q33 (or Q34 Q35 Q36)))
+-Q34 -Q33
+-Q35 -Q33
+-Q36 -Q33
+
+# (not (and Q34 (or Q35 Q36)))
+-Q35 -Q34
+-Q36 -Q34
+
+# (not (and Q35 (or Q36)))
+-Q36 -Q35
+
+# 
+# # Not Multiple Queens in Column 4
+# (not (and Q41 (or Q42 Q43 Q44 Q45 Q46)))
+-Q42 -Q41
+-Q43 -Q41
+-Q44 -Q41
+-Q45 -Q41
+-Q46 -Q41
+
+# (not (and Q42 (or Q43 Q44 Q45 Q46)))
+-Q43 -Q42
+-Q44 -Q42
+-Q45 -Q42
+-Q46 -Q42
+
+# (not (and Q43 (or Q44 Q45 Q46)))
+-Q44 -Q43
+-Q45 -Q43
+-Q46 -Q43
+
+# (not (and Q44 (or Q45 Q46)))
+-Q45 -Q44
+-Q46 -Q44
+
+# (not (and Q45 (or Q46)))
+-Q46 -Q45
+
+# 
+# # Not Multiple Queens in Column 5
+# (not (and Q51 (or Q52 Q53 Q54 Q55 Q56)))
+-Q52 -Q51
+-Q53 -Q51
+-Q54 -Q51
+-Q55 -Q51
+-Q56 -Q51
+
+# (not (and Q52 (or Q53 Q54 Q55 Q56)))
+-Q53 -Q52
+-Q54 -Q52
+-Q55 -Q52
+-Q56 -Q52
+
+# (not (and Q53 (or Q54 Q55 Q56)))
+-Q54 -Q53
+-Q55 -Q53
+-Q56 -Q53
+
+# (not (and Q54 (or Q55 Q56)))
+-Q55 -Q54
+-Q56 -Q54
+
+# (not (and Q55 (or Q56)))
+-Q56 -Q55
+
+# 
+# # Not Multiple Queens in Column 6
+# (not (and Q61 (or Q62 Q63 Q64 Q65 Q66)))
+-Q62 -Q61
+-Q63 -Q61
+-Q64 -Q61
+-Q65 -Q61
+-Q66 -Q61
+
+# (not (and Q62 (or Q63 Q64 Q65 Q66)))
+-Q63 -Q62
+-Q64 -Q62
+-Q65 -Q62
+-Q66 -Q62
+
+# (not (and Q63 (or Q64 Q65 Q66)))
+-Q64 -Q63
+-Q65 -Q63
+-Q66 -Q63
+
+# (not (and Q64 (or Q65 Q66)))
+-Q65 -Q64
+-Q66 -Q64
+
+# (not (and Q65 (or Q66)))
+-Q66 -Q65
+
+# 
+# # Not Multiple Queens in Row 1
+# (not (and Q11 (or Q21 Q31 Q41 Q51 Q61)))
+-Q21 -Q11
+-Q31 -Q11
+-Q41 -Q11
+-Q51 -Q11
+-Q61 -Q11
+
+# (not (and Q21 (or Q31 Q41 Q51 Q61)))
+-Q31 -Q21
+-Q41 -Q21
+-Q51 -Q21
+-Q61 -Q21
+
+# (not (and Q31 (or Q41 Q51 Q61)))
+-Q41 -Q31
+-Q51 -Q31
+-Q61 -Q31
+
+# (not (and Q41 (or Q51 Q61)))
+-Q51 -Q41
+-Q61 -Q41
+
+# (not (and Q51 (or Q61)))
+-Q61 -Q51
+
+# 
+# # Not Multiple Queens in Row 2
+# (not (and Q12 (or Q22 Q32 Q42 Q52 Q62)))
+-Q22 -Q12
+-Q32 -Q12
+-Q42 -Q12
+-Q52 -Q12
+-Q62 -Q12
+
+# (not (and Q22 (or Q32 Q42 Q52 Q62)))
+-Q32 -Q22
+-Q42 -Q22
+-Q52 -Q22
+-Q62 -Q22
+
+# (not (and Q32 (or Q42 Q52 Q62)))
+-Q42 -Q32
+-Q52 -Q32
+-Q62 -Q32
+
+# (not (and Q42 (or Q52 Q62)))
+-Q52 -Q42
+-Q62 -Q42
+
+# (not (and Q52 (or Q62)))
+-Q62 -Q52
+
+# 
+# # Not Multiple Queens in Row 3
+# (not (and Q13 (or Q23 Q33 Q43 Q53 Q63)))
+-Q23 -Q13
+-Q33 -Q13
+-Q43 -Q13
+-Q53 -Q13
+-Q63 -Q13
+
+# (not (and Q23 (or Q33 Q43 Q53 Q63)))
+-Q33 -Q23
+-Q43 -Q23
+-Q53 -Q23
+-Q63 -Q23
+
+# (not (and Q33 (or Q43 Q53 Q63)))
+-Q43 -Q33
+-Q53 -Q33
+-Q63 -Q33
+
+# (not (and Q43 (or Q53 Q63)))
+-Q53 -Q43
+-Q63 -Q43
+
+# (not (and Q53 (or Q63)))
+-Q63 -Q53
+
+# 
+# # Not Multiple Queens in Row 4
+# (not (and Q14 (or Q24 Q34 Q44 Q54 Q64)))
+-Q24 -Q14
+-Q34 -Q14
+-Q44 -Q14
+-Q54 -Q14
+-Q64 -Q14
+
+# (not (and Q24 (or Q34 Q44 Q54 Q64)))
+-Q34 -Q24
+-Q44 -Q24
+-Q54 -Q24
+-Q64 -Q24
+
+# (not (and Q34 (or Q44 Q54 Q64)))
+-Q44 -Q34
+-Q54 -Q34
+-Q64 -Q34
+
+# (not (and Q44 (or Q54 Q64)))
+-Q54 -Q44
+-Q64 -Q44
+
+# (not (and Q54 (or Q64)))
+-Q64 -Q54
+
+# 
+# # Not Multiple Queens in Row 5
+# (not (and Q15 (or Q25 Q35 Q45 Q55 Q65)))
+-Q25 -Q15
+-Q35 -Q15
+-Q45 -Q15
+-Q55 -Q15
+-Q65 -Q15
+
+# (not (and Q25 (or Q35 Q45 Q55 Q65)))
+-Q35 -Q25
+-Q45 -Q25
+-Q55 -Q25
+-Q65 -Q25
+
+# (not (and Q35 (or Q45 Q55 Q65)))
+-Q45 -Q35
+-Q55 -Q35
+-Q65 -Q35
+
+# (not (and Q45 (or Q55 Q65)))
+-Q55 -Q45
+-Q65 -Q45
+
+# (not (and Q55 (or Q65)))
+-Q65 -Q55
+
+# 
+# # Not Multiple Queens in Row 6
+# (not (and Q16 (or Q26 Q36 Q46 Q56 Q66)))
+-Q26 -Q16
+-Q36 -Q16
+-Q46 -Q16
+-Q56 -Q16
+-Q66 -Q16
+
+# (not (and Q26 (or Q36 Q46 Q56 Q66)))
+-Q36 -Q26
+-Q46 -Q26
+-Q56 -Q26
+-Q66 -Q26
+
+# (not (and Q36 (or Q46 Q56 Q66)))
+-Q46 -Q36
+-Q56 -Q36
+-Q66 -Q36
+
+# (not (and Q46 (or Q56 Q66)))
+-Q56 -Q46
+-Q66 -Q46
+
+# (not (and Q56 (or Q66)))
+-Q66 -Q56
+
+# 
+# # Not Multiple Queens in Same Right Diagonal
+# (not (and Q11 (or Q22 Q33 Q44 Q55 Q66)))
+-Q22 -Q11
+-Q33 -Q11
+-Q44 -Q11
+-Q55 -Q11
+-Q66 -Q11
+
+# (not (and Q12 (or Q23 Q34 Q45 Q56)))
+-Q23 -Q12
+-Q34 -Q12
+-Q45 -Q12
+-Q56 -Q12
+
+# (not (and Q13 (or Q24 Q35 Q46)))
+-Q24 -Q13
+-Q35 -Q13
+-Q46 -Q13
+
+# (not (and Q14 (or Q25 Q36)))
+-Q25 -Q14
+-Q36 -Q14
+
+# (not (and Q15 (or Q26)))
+-Q26 -Q15
+
+# (not (and Q21 (or Q32 Q43 Q54 Q65)))
+-Q32 -Q21
+-Q43 -Q21
+-Q54 -Q21
+-Q65 -Q21
+
+# (not (and Q22 (or Q33 Q44 Q55 Q66)))
+-Q33 -Q22
+-Q44 -Q22
+-Q55 -Q22
+-Q66 -Q22
+
+# (not (and Q23 (or Q34 Q45 Q56)))
+-Q34 -Q23
+-Q45 -Q23
+-Q56 -Q23
+
+# (not (and Q24 (or Q35 Q46)))
+-Q35 -Q24
+-Q46 -Q24
+
+# (not (and Q25 (or Q36)))
+-Q36 -Q25
+
+# (not (and Q31 (or Q42 Q53 Q64)))
+-Q42 -Q31
+-Q53 -Q31
+-Q64 -Q31
+
+# (not (and Q32 (or Q43 Q54 Q65)))
+-Q43 -Q32
+-Q54 -Q32
+-Q65 -Q32
+
+# (not (and Q33 (or Q44 Q55 Q66)))
+-Q44 -Q33
+-Q55 -Q33
+-Q66 -Q33
+
+# (not (and Q34 (or Q45 Q56)))
+-Q45 -Q34
+-Q56 -Q34
+
+# (not (and Q35 (or Q46)))
+-Q46 -Q35
+
+# (not (and Q41 (or Q52 Q63)))
+-Q52 -Q41
+-Q63 -Q41
+
+# (not (and Q42 (or Q53 Q64)))
+-Q53 -Q42
+-Q64 -Q42
+
+# (not (and Q43 (or Q54 Q65)))
+-Q54 -Q43
+-Q65 -Q43
+
+# (not (and Q44 (or Q55 Q66)))
+-Q55 -Q44
+-Q66 -Q44
+
+# (not (and Q45 (or Q56)))
+-Q56 -Q45
+
+# (not (and Q51 (or Q62)))
+-Q62 -Q51
+
+# (not (and Q52 (or Q63)))
+-Q63 -Q52
+
+# (not (and Q53 (or Q64)))
+-Q64 -Q53
+
+# (not (and Q54 (or Q65)))
+-Q65 -Q54
+
+# (not (and Q55 (or Q66)))
+-Q66 -Q55
+
+# 
+# # Not Multiple Queens in Same Left Diagonal
+# (not (and Q12 (or Q21)))
+-Q21 -Q12
+
+# (not (and Q22 (or Q31)))
+-Q31 -Q22
+
+# (not (and Q32 (or Q41)))
+-Q41 -Q32
+
+# (not (and Q42 (or Q51)))
+-Q51 -Q42
+
+# (not (and Q52 (or Q61)))
+-Q61 -Q52
+
+# (not (and Q13 (or Q22 Q31)))
+-Q22 -Q13
+-Q31 -Q13
+
+# (not (and Q23 (or Q32 Q41)))
+-Q32 -Q23
+-Q41 -Q23
+
+# (not (and Q33 (or Q42 Q51)))
+-Q42 -Q33
+-Q51 -Q33
+
+# (not (and Q43 (or Q52 Q61)))
+-Q52 -Q43
+-Q61 -Q43
+
+# (not (and Q53 (or Q62)))
+-Q62 -Q53
+
+# (not (and Q14 (or Q23 Q32 Q41)))
+-Q23 -Q14
+-Q32 -Q14
+-Q41 -Q14
+
+# (not (and Q24 (or Q33 Q42 Q51)))
+-Q33 -Q24
+-Q42 -Q24
+-Q51 -Q24
+
+# (not (and Q34 (or Q43 Q52 Q61)))
+-Q43 -Q34
+-Q52 -Q34
+-Q61 -Q34
+
+# (not (and Q44 (or Q53 Q62)))
+-Q53 -Q44
+-Q62 -Q44
+
+# (not (and Q54 (or Q63)))
+-Q63 -Q54
+
+# (not (and Q15 (or Q24 Q33 Q42 Q51)))
+-Q24 -Q15
+-Q33 -Q15
+-Q42 -Q15
+-Q51 -Q15
+
+# (not (and Q25 (or Q34 Q43 Q52 Q61)))
+-Q34 -Q25
+-Q43 -Q25
+-Q52 -Q25
+-Q61 -Q25
+
+# (not (and Q35 (or Q44 Q53 Q62)))
+-Q44 -Q35
+-Q53 -Q35
+-Q62 -Q35
+
+# (not (and Q45 (or Q54 Q63)))
+-Q54 -Q45
+-Q63 -Q45
+
+# (not (and Q55 (or Q64)))
+-Q64 -Q55
+
+# (not (and Q16 (or Q25 Q34 Q43 Q52 Q61)))
+-Q25 -Q16
+-Q34 -Q16
+-Q43 -Q16
+-Q52 -Q16
+-Q61 -Q16
+
+# (not (and Q26 (or Q35 Q44 Q53 Q62)))
+-Q35 -Q26
+-Q44 -Q26
+-Q53 -Q26
+-Q62 -Q26
+
+# (not (and Q36 (or Q45 Q54 Q63)))
+-Q45 -Q36
+-Q54 -Q36
+-Q63 -Q36
+
+# (not (and Q46 (or Q55 Q64)))
+-Q55 -Q46
+-Q64 -Q46
+
+# (not (and Q56 (or Q65)))
+-Q65 -Q56
+
+# 
+# APPENDIX:
