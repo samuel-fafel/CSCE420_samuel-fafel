@@ -1,0 +1,133 @@
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q34 = True -- Depth 0
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q31 = False -- Depth 1
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q32 = False -- Depth 2
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q33 = False -- Depth 3
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q35 = False -- Depth 4
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q14 = False -- Depth 5
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q24 = False -- Depth 6
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q44 = False -- Depth 7
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q54 = False -- Depth 8
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q12 = False -- Depth 9
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q23 = False -- Depth 10
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q45 = False -- Depth 11
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q43 = False -- Depth 12
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q52 = False -- Depth 13
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q25 = False -- Depth 14
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q53 = True -- Depth 15
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q51 = False -- Depth 16
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q55 = False -- Depth 17
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q15 = True -- Depth 18
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q11 = False -- Depth 19
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q13 = False -- Depth 20
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q42 = False -- Depth 21
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q41 = True -- Depth 22
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q22 = True -- Depth 23
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: Q21 = False -- Depth 24
+
+Are all satisfied? True
+	BASE CASE 1: ALL TRUE -- Depth 25
+
+------ MODEL ------
+Q11 False
+Q12 False
+Q13 False
+Q14 False
+Q15 True
+Q21 False
+Q22 True
+Q23 False
+Q24 False
+Q25 False
+Q31 False
+Q32 False
+Q33 False
+Q34 True
+Q35 False
+Q41 True
+Q42 False
+Q43 False
+Q44 False
+Q45 False
+Q51 False
+Q52 False
+Q53 True
+Q54 False
+Q55 False
+-------------------
+SATISFIED: True
+NUMBER OF RECURSIONS: 26
+-------------------

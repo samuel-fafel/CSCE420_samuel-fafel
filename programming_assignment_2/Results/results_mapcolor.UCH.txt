@@ -1,0 +1,113 @@
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting SAG = True -- Depth 0
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: WAG = False -- Depth 1
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: NTG = False -- Depth 2
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: QG = False -- Depth 3
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: NSWG = False -- Depth 4
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: VG = False -- Depth 5
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: SAR = False -- Depth 6
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: SAB = False -- Depth 7
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting QB = True -- Depth 8
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: NTB = False -- Depth 9
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: NSWB = False -- Depth 10
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: QR = False -- Depth 11
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: WAR = False -- Depth 12
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: VR = False -- Depth 13
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: VB = True -- Depth 14
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: WAB = True -- Depth 15
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: NTR = True -- Depth 16
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: NSWR = True -- Depth 17
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting TR = True -- Depth 18
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: TG = False -- Depth 19
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: TB = False -- Depth 20
+
+Are all satisfied? True
+	BASE CASE 1: ALL TRUE -- Depth 21
+
+------ MODEL ------
+NSWB False
+NSWG False
+NSWR True
+NTB False
+NTG False
+NTR True
+QB True
+QG False
+QR False
+SAB False
+SAG True
+SAR False
+TB False
+TG False
+TR True
+VB True
+VG False
+VR False
+WAB True
+WAG False
+WAR False
+-------------------
+SATISFIED: True
+NUMBER OF RECURSIONS: 22
+-------------------

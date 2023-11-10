@@ -1,0 +1,37 @@
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: SAR = False -- Depth 0
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: NTR = False -- Depth 1
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: NSWR = False -- Depth 2
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: SAG = False -- Depth 3
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: NSWG = False -- Depth 4
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: QG = False -- Depth 5
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 6
+	 Violations:
+	 ['QG', '-VG']
+	  QG = False, VG = True, 
+	-----------------------
+
+-------------------
+Unsatisfiable
+NUMBER OF RECURSIONS: 7
+-------------------

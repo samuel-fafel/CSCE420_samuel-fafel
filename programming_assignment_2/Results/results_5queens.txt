@@ -1,0 +1,659 @@
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q32 = True -- Depth 0
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q25 = True -- Depth 1
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q53 = True -- Depth 2
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q13 = True -- Depth 3
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 4
+	 Violations:
+	 ['-Q53', '-Q13']
+	  Q53 = True, Q13 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q13 = False -- Depth 3
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q12 = True -- Depth 4
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 5
+	 Violations:
+	 ['-Q32', '-Q12']
+	  Q32 = True, Q12 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q12 = False -- Depth 4
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q42 = True -- Depth 5
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 6
+	 Violations:
+	 ['-Q42', '-Q32']
+	  Q42 = True, Q32 = True, 
+	 ['-Q53', '-Q42']
+	  Q53 = True, Q42 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q42 = False -- Depth 5
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q51 = True -- Depth 6
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 7
+	 Violations:
+	 ['-Q53', '-Q51']
+	  Q53 = True, Q51 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q51 = False -- Depth 6
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q33 = True -- Depth 7
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 8
+	 Violations:
+	 ['-Q33', '-Q32']
+	  Q33 = True, Q32 = True, 
+	 ['-Q53', '-Q33']
+	  Q53 = True, Q33 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q33 = False -- Depth 7
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q23 = True -- Depth 8
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 9
+	 Violations:
+	 ['-Q25', '-Q23']
+	  Q25 = True, Q23 = True, 
+	 ['-Q53', '-Q23']
+	  Q53 = True, Q23 = True, 
+	 ['-Q32', '-Q23']
+	  Q32 = True, Q23 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q23 = False -- Depth 8
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q34 = True -- Depth 9
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 10
+	 Violations:
+	 ['-Q34', '-Q32']
+	  Q34 = True, Q32 = True, 
+	 ['-Q34', '-Q25']
+	  Q34 = True, Q25 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q34 = False -- Depth 9
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q44 = True -- Depth 10
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 11
+	 Violations:
+	 ['-Q53', '-Q44']
+	  Q53 = True, Q44 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q44 = False -- Depth 10
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q35 = True -- Depth 11
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 12
+	 Violations:
+	 ['-Q35', '-Q32']
+	  Q35 = True, Q32 = True, 
+	 ['-Q35', '-Q25']
+	  Q35 = True, Q25 = True, 
+	 ['-Q53', '-Q35']
+	  Q53 = True, Q35 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q35 = False -- Depth 11
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q45 = True -- Depth 12
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 13
+	 Violations:
+	 ['-Q45', '-Q25']
+	  Q45 = True, Q25 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q45 = False -- Depth 12
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q24 = True -- Depth 13
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 14
+	 Violations:
+	 ['-Q25', '-Q24']
+	  Q25 = True, Q24 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q24 = False -- Depth 13
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q55 = True -- Depth 14
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 15
+	 Violations:
+	 ['-Q55', '-Q53']
+	  Q55 = True, Q53 = True, 
+	 ['-Q55', '-Q25']
+	  Q55 = True, Q25 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q55 = False -- Depth 14
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q14 = True -- Depth 15
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 16
+	 Violations:
+	 ['-Q25', '-Q14']
+	  Q25 = True, Q14 = True, 
+	 ['-Q32', '-Q14']
+	  Q32 = True, Q14 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q14 = False -- Depth 15
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q54 = True -- Depth 16
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 17
+	 Violations:
+	 ['-Q54', '-Q53']
+	  Q54 = True, Q53 = True, 
+	 ['-Q54', '-Q32']
+	  Q54 = True, Q32 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q54 = False -- Depth 16
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 17
+	 Violations:
+	 ['Q14', 'Q24', 'Q34', 'Q44', 'Q54']
+	  Q14 = False, Q24 = False, Q34 = False, Q44 = False, Q54 = False, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q53 = False -- Depth 2
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q13 = True -- Depth 3
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q12 = True -- Depth 4
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 5
+	 Violations:
+	 ['-Q13', '-Q12']
+	  Q13 = True, Q12 = True, 
+	 ['-Q32', '-Q12']
+	  Q32 = True, Q12 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q12 = False -- Depth 4
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q42 = True -- Depth 5
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 6
+	 Violations:
+	 ['-Q42', '-Q32']
+	  Q42 = True, Q32 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q42 = False -- Depth 5
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q51 = True -- Depth 6
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q33 = True -- Depth 7
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 8
+	 Violations:
+	 ['-Q33', '-Q32']
+	  Q33 = True, Q32 = True, 
+	 ['-Q33', '-Q13']
+	  Q33 = True, Q13 = True, 
+	 ['-Q51', '-Q33']
+	  Q51 = True, Q33 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q33 = False -- Depth 7
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q23 = True -- Depth 8
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 9
+	 Violations:
+	 ['-Q25', '-Q23']
+	  Q25 = True, Q23 = True, 
+	 ['-Q23', '-Q13']
+	  Q23 = True, Q13 = True, 
+	 ['-Q32', '-Q23']
+	  Q32 = True, Q23 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q23 = False -- Depth 8
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q34 = True -- Depth 9
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 10
+	 Violations:
+	 ['-Q34', '-Q32']
+	  Q34 = True, Q32 = True, 
+	 ['-Q34', '-Q25']
+	  Q34 = True, Q25 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q34 = False -- Depth 9
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q44 = True -- Depth 10
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q35 = True -- Depth 11
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 12
+	 Violations:
+	 ['-Q35', '-Q32']
+	  Q35 = True, Q32 = True, 
+	 ['-Q35', '-Q25']
+	  Q35 = True, Q25 = True, 
+	 ['-Q35', '-Q13']
+	  Q35 = True, Q13 = True, 
+	 ['-Q44', '-Q35']
+	  Q44 = True, Q35 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q35 = False -- Depth 11
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q45 = True -- Depth 12
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 13
+	 Violations:
+	 ['-Q45', '-Q44']
+	  Q45 = True, Q44 = True, 
+	 ['-Q45', '-Q25']
+	  Q45 = True, Q25 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q45 = False -- Depth 12
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q24 = True -- Depth 13
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 14
+	 Violations:
+	 ['-Q25', '-Q24']
+	  Q25 = True, Q24 = True, 
+	 ['-Q44', '-Q24']
+	  Q44 = True, Q24 = True, 
+	 ['-Q24', '-Q13']
+	  Q24 = True, Q13 = True, 
+	 ['-Q51', '-Q24']
+	  Q51 = True, Q24 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q24 = False -- Depth 13
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q55 = True -- Depth 14
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 15
+	 Violations:
+	 ['-Q55', '-Q51']
+	  Q55 = True, Q51 = True, 
+	 ['-Q55', '-Q25']
+	  Q55 = True, Q25 = True, 
+	 ['-Q55', '-Q44']
+	  Q55 = True, Q44 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q55 = False -- Depth 14
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q14 = True -- Depth 15
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 16
+	 Violations:
+	 ['-Q14', '-Q13']
+	  Q14 = True, Q13 = True, 
+	 ['-Q44', '-Q14']
+	  Q44 = True, Q14 = True, 
+	 ['-Q25', '-Q14']
+	  Q25 = True, Q14 = True, 
+	 ['-Q32', '-Q14']
+	  Q32 = True, Q14 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q14 = False -- Depth 15
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q54 = True -- Depth 16
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 17
+	 Violations:
+	 ['-Q54', '-Q51']
+	  Q54 = True, Q51 = True, 
+	 ['-Q54', '-Q44']
+	  Q54 = True, Q44 = True, 
+	 ['-Q54', '-Q32']
+	  Q54 = True, Q32 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q54 = False -- Depth 16
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q15 = True -- Depth 17
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 18
+	 Violations:
+	 ['-Q15', '-Q13']
+	  Q15 = True, Q13 = True, 
+	 ['-Q25', '-Q15']
+	  Q25 = True, Q15 = True, 
+	 ['-Q51', '-Q15']
+	  Q51 = True, Q15 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q15 = False -- Depth 17
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q52 = True -- Depth 18
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 19
+	 Violations:
+	 ['-Q52', '-Q51']
+	  Q52 = True, Q51 = True, 
+	 ['-Q52', '-Q32']
+	  Q52 = True, Q32 = True, 
+	 ['-Q52', '-Q25']
+	  Q52 = True, Q25 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q52 = False -- Depth 18
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q43 = True -- Depth 19
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 20
+	 Violations:
+	 ['-Q44', '-Q43']
+	  Q44 = True, Q43 = True, 
+	 ['-Q43', '-Q13']
+	  Q43 = True, Q13 = True, 
+	 ['-Q43', '-Q32']
+	  Q43 = True, Q32 = True, 
+	 ['-Q43', '-Q25']
+	  Q43 = True, Q25 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q43 = False -- Depth 19
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q22 = True -- Depth 20
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 21
+	 Violations:
+	 ['-Q25', '-Q22']
+	  Q25 = True, Q22 = True, 
+	 ['-Q32', '-Q22']
+	  Q32 = True, Q22 = True, 
+	 ['-Q44', '-Q22']
+	  Q44 = True, Q22 = True, 
+	 ['-Q22', '-Q13']
+	  Q22 = True, Q13 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q22 = False -- Depth 20
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q21 = True -- Depth 21
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 22
+	 Violations:
+	 ['-Q25', '-Q21']
+	  Q25 = True, Q21 = True, 
+	 ['-Q51', '-Q21']
+	  Q51 = True, Q21 = True, 
+	 ['-Q32', '-Q21']
+	  Q32 = True, Q21 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q21 = False -- Depth 21
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q41 = True -- Depth 22
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 23
+	 Violations:
+	 ['-Q44', '-Q41']
+	  Q44 = True, Q41 = True, 
+	 ['-Q51', '-Q41']
+	  Q51 = True, Q41 = True, 
+	 ['-Q41', '-Q32']
+	  Q41 = True, Q32 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q41 = False -- Depth 22
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q31 = True -- Depth 23
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 24
+	 Violations:
+	 ['-Q32', '-Q31']
+	  Q32 = True, Q31 = True, 
+	 ['-Q51', '-Q31']
+	  Q51 = True, Q31 = True, 
+	 ['-Q31', '-Q13']
+	  Q31 = True, Q13 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q31 = False -- Depth 23
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting Q11 = True -- Depth 24
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 25
+	 Violations:
+	 ['-Q13', '-Q11']
+	  Q13 = True, Q11 = True, 
+	 ['-Q51', '-Q11']
+	  Q51 = True, Q11 = True, 
+	 ['-Q44', '-Q11']
+	  Q44 = True, Q11 = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting Q11 = False -- Depth 24
+
+Are all satisfied? True
+	BASE CASE 1: ALL TRUE -- Depth 25
+
+------ MODEL ------
+Q11 False
+Q12 False
+Q13 True
+Q14 False
+Q15 False
+Q21 False
+Q22 False
+Q23 False
+Q24 False
+Q25 True
+Q31 False
+Q32 True
+Q33 False
+Q34 False
+Q35 False
+Q41 False
+Q42 False
+Q43 False
+Q44 True
+Q45 False
+Q51 True
+Q52 False
+Q53 False
+Q54 False
+Q55 False
+-------------------
+SATISFIED: True
+NUMBER OF RECURSIONS: 74
+-------------------

@@ -1,0 +1,515 @@
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting L3W = True -- Depth 0
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 1
+	 Violations:
+	 ['-L3W', '-L3B']
+	  L3W = True, L3B = True, 
+	 ['-L3B', '-L3W']
+	  L3B = True, L3W = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting L3W = False -- Depth 0
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting L1Y = True -- Depth 1
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 2
+	 Violations:
+	 ['-L1Y', '-L1W']
+	  L1Y = True, L1W = True, 
+	 ['-L1W', '-L1Y']
+	  L1W = True, L1Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting L1Y = False -- Depth 1
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting O3W = True -- Depth 2
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 3
+	 Violations:
+	 ['-O3Y', '-O3W']
+	  O3Y = True, O3W = True, 
+	 ['-O3W', '-O3Y']
+	  O3W = True, O3Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting O3W = False -- Depth 2
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting O2Y = True -- Depth 3
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 4
+	 Violations:
+	 ['-O2Y', '-O2W']
+	  O2Y = True, O2W = True, 
+	 ['-O2W', '-O2Y']
+	  O2W = True, O2Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting O2Y = False -- Depth 3
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting O1W = True -- Depth 4
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 5
+	 Violations:
+	 ['-O1Y', '-O1W']
+	  O1Y = True, O1W = True, 
+	 ['-O1W', '-O1Y']
+	  O1W = True, O1Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting O1W = False -- Depth 4
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C3B = True -- Depth 5
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 6
+	 Violations:
+	 ['-L3B', '-C3B']
+	  L3B = True, C3B = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C3B = False -- Depth 5
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C2B = True -- Depth 6
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting L2W = True -- Depth 7
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 8
+	 Violations:
+	 ['-L2Y', '-L2W']
+	  L2Y = True, L2W = True, 
+	 ['-L2W', '-L2Y']
+	  L2W = True, L2Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting L2W = False -- Depth 7
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting L2B = True -- Depth 8
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 9
+	 Violations:
+	 ['-L2B', '-C2B']
+	  L2B = True, C2B = True, 
+	 ['-L2Y', '-L2B']
+	  L2Y = True, L2B = True, 
+	 ['-L2B', '-L2Y']
+	  L2B = True, L2Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting L2B = False -- Depth 8
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C3W = True -- Depth 9
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 10
+	 Violations:
+	 ['-O3Y', '-C3W']
+	  O3Y = True, C3W = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C3W = False -- Depth 9
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting L1B = True -- Depth 10
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 11
+	 Violations:
+	 ['-L1W', '-L1B']
+	  L1W = True, L1B = True, 
+	 ['-L1B', '-L1W']
+	  L1B = True, L1W = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting L1B = False -- Depth 10
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C2W = True -- Depth 11
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 12
+	 Violations:
+	 ['-C2B', '-C2W']
+	  C2B = True, C2W = True, 
+	 ['-C2W', '-C2B']
+	  C2W = True, C2B = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C2W = False -- Depth 11
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting L3Y = True -- Depth 12
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 13
+	 Violations:
+	 ['-L3Y', '-L3B']
+	  L3Y = True, L3B = True, 
+	 ['-L3B', '-L3Y']
+	  L3B = True, L3Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting L3Y = False -- Depth 12
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C2Y = True -- Depth 13
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 14
+	 Violations:
+	 ['-L2Y', '-C2Y']
+	  L2Y = True, C2Y = True, 
+	 ['-O2W', '-C2Y']
+	  O2W = True, C2Y = True, 
+	 ['-C2B', '-C2Y']
+	  C2B = True, C2Y = True, 
+	 ['-C2Y', '-C2B']
+	  C2Y = True, C2B = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C2Y = False -- Depth 13
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C1B = True -- Depth 14
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 15
+	 Violations:
+	 ['-C2B', '-C1B']
+	  C2B = True, C1B = True, 
+	 ['-C1B', '-C2B']
+	  C1B = True, C2B = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C1B = False -- Depth 14
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C1Y = True -- Depth 15
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C1W = True -- Depth 16
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 17
+	 Violations:
+	 ['-L1W', '-C1W']
+	  L1W = True, C1W = True, 
+	 ['-O1Y', '-C1W']
+	  O1Y = True, C1W = True, 
+	 ['-C1W', '-C1Y']
+	  C1W = True, C1Y = True, 
+	 ['-C1Y', '-C1W']
+	  C1Y = True, C1W = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C1W = False -- Depth 16
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C3Y = True -- Depth 17
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 18
+	 Violations:
+	 ['-C3Y', '-C1Y']
+	  C3Y = True, C1Y = True, 
+	 ['-C1Y', '-C3Y']
+	  C1Y = True, C3Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C3Y = False -- Depth 17
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 18
+	 Violations:
+	 ['C3Y', 'C3W', 'C3B']
+	  C3Y = False, C3W = False, C3B = False, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C1Y = False -- Depth 15
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C1W = True -- Depth 16
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 17
+	 Violations:
+	 ['-L1W', '-C1W']
+	  L1W = True, C1W = True, 
+	 ['-O1Y', '-C1W']
+	  O1Y = True, C1W = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C1W = False -- Depth 16
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 17
+	 Violations:
+	 ['C1Y', 'C1W', 'C1B']
+	  C1Y = False, C1W = False, C1B = False, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C2B = False -- Depth 6
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting L2W = True -- Depth 7
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 8
+	 Violations:
+	 ['-L2Y', '-L2W']
+	  L2Y = True, L2W = True, 
+	 ['-L2W', '-L2Y']
+	  L2W = True, L2Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting L2W = False -- Depth 7
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting L2B = True -- Depth 8
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 9
+	 Violations:
+	 ['-L2Y', '-L2B']
+	  L2Y = True, L2B = True, 
+	 ['-L2B', '-L2Y']
+	  L2B = True, L2Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting L2B = False -- Depth 8
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C3W = True -- Depth 9
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 10
+	 Violations:
+	 ['-O3Y', '-C3W']
+	  O3Y = True, C3W = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C3W = False -- Depth 9
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting L1B = True -- Depth 10
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 11
+	 Violations:
+	 ['-L1W', '-L1B']
+	  L1W = True, L1B = True, 
+	 ['-L1B', '-L1W']
+	  L1B = True, L1W = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting L1B = False -- Depth 10
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C2W = True -- Depth 11
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting L3Y = True -- Depth 12
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 13
+	 Violations:
+	 ['-L3Y', '-L3B']
+	  L3Y = True, L3B = True, 
+	 ['-L3B', '-L3Y']
+	  L3B = True, L3Y = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting L3Y = False -- Depth 12
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C2Y = True -- Depth 13
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 14
+	 Violations:
+	 ['-L2Y', '-C2Y']
+	  L2Y = True, C2Y = True, 
+	 ['-O2W', '-C2Y']
+	  O2W = True, C2Y = True, 
+	 ['-C2W', '-C2Y']
+	  C2W = True, C2Y = True, 
+	 ['-C2Y', '-C2W']
+	  C2Y = True, C2W = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C2Y = False -- Depth 13
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C1B = True -- Depth 14
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C1Y = True -- Depth 15
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 16
+	 Violations:
+	 ['-C1B', '-C1Y']
+	  C1B = True, C1Y = True, 
+	 ['-C1Y', '-C1B']
+	  C1Y = True, C1B = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C1Y = False -- Depth 15
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C1W = True -- Depth 16
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 17
+	 Violations:
+	 ['-L1W', '-C1W']
+	  L1W = True, C1W = True, 
+	 ['-O1Y', '-C1W']
+	  O1Y = True, C1W = True, 
+	 ['-C1B', '-C1W']
+	  C1B = True, C1W = True, 
+	 ['-C1W', '-C1B']
+	  C1W = True, C1B = True, 
+	 ['-C2W', '-C1W']
+	  C2W = True, C1W = True, 
+	 ['-C1W', '-C2W']
+	  C1W = True, C2W = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting C1W = False -- Depth 16
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting C3Y = True -- Depth 17
+
+Are all satisfied? True
+	BASE CASE 1: ALL TRUE -- Depth 18
+
+------ MODEL ------
+C1B True
+C1W False
+C1Y False
+C2B False
+C2W True
+C2Y False
+C3B False
+C3W False
+C3Y True
+L1B False
+L1W True
+L1Y False
+L2B False
+L2W False
+L2Y True
+L3B True
+L3W False
+L3Y False
+O1W False
+O1Y True
+O2W True
+O2Y False
+O3W False
+O3Y True
+-------------------
+SATISFIED: True
+NUMBER OF RECURSIONS: 58
+-------------------

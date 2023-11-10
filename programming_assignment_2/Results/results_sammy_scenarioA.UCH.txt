@@ -1,0 +1,104 @@
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: C1W = False -- Depth 0
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: C2Y = False -- Depth 1
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: C3B = False -- Depth 2
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: O1W = False -- Depth 3
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: O2Y = False -- Depth 4
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: O3W = False -- Depth 5
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: C3W = False -- Depth 6
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: L1Y = False -- Depth 7
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: L2W = False -- Depth 8
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: L2B = False -- Depth 9
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: L3Y = False -- Depth 10
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: L1B = False -- Depth 11
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: L3W = False -- Depth 12
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: C3Y = True -- Depth 13
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: C1Y = False -- Depth 14
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: C1B = True -- Depth 15
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: C2B = False -- Depth 16
+
+Are all satisfied? False
+Are some false? False
+	UCH CASE: Unit Symbol: C2W = True -- Depth 17
+
+Are all satisfied? True
+	BASE CASE 1: ALL TRUE -- Depth 18
+
+------ MODEL ------
+C1B True
+C1W False
+C1Y False
+C2B False
+C2W True
+C2Y False
+C3B False
+C3W False
+C3Y True
+L1B False
+L1W True
+L1Y False
+L2B False
+L2W False
+L2Y True
+L3B True
+L3W False
+L3Y False
+O1W False
+O1Y True
+O2W True
+O2Y False
+O3W False
+O3Y True
+-------------------
+SATISFIED: True
+NUMBER OF RECURSIONS: 19
+-------------------

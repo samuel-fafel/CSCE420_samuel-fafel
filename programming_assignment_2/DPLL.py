@@ -70,12 +70,15 @@ def parse_args(argv):
     filename = ""
     literals = []
     uch = False
+    verbose = False
 
     # Start from 1 to skip the script name
     it = iter(argv[1:])
     for arg in it:
         if arg == "+UCH":
             uch = True
+        elif arg == "-V":
+            verbose = True
         elif not filename:
             filename = arg
         else:
@@ -85,7 +88,7 @@ def parse_args(argv):
     if not filename:
         raise ValueError("No filename provided.")
 
-    return filename, literals, uch
+    return filename, literals, uch, verbose
 
 def evaluate_clause(clause, model, verbose=False):
     """Checks if a clause is satisfied, unsatisfied, or undetermined.
@@ -195,9 +198,10 @@ def DPLL(clauses, given_symbols, given_model, UCH, depth=0, verbose=False):
     all_satisfied = all(evaluate_clause(clause, model) for clause in clauses)
     if verbose: print(f"Are all satisfied? {all_satisfied}")
     if all_satisfied:
-        if verbose: print(f"\tBASE CASE 1: ALL TRUE -- Depth {depth}\n\n")
+        if verbose: print(f"\tBASE CASE 1: ALL TRUE -- Depth {depth}\n")
         key_list = list(model.keys())
         key_list.sort()
+        print('------ MODEL ------')
         for symbol in key_list:
             print(symbol, model[symbol])
         return True
@@ -209,14 +213,15 @@ def DPLL(clauses, given_symbols, given_model, UCH, depth=0, verbose=False):
         if verbose:
             print("\t-----------------------")
             print(f"\tBASE CASE 2: SOME FALSE -- Depth {depth}")
-            for i, clause in enumerate(clauses):
+            print(f"\t Violations:")
+            for i, clause in enumerate(clauses): # Print Violated Clauses
                 if evaluate_clause(clause, model) == False:
                     print(f"\t {clause}")
                     print("\t", end='  ')
                     for symbol in clause:
                         print(f"{symbol.strip('-')} = {model[symbol.strip('-')]}", end=', ')
                     print()
-            print("\t-----------------------")
+            print("\t-----------------------\n")
         return False
     
     # Find a unit clause
@@ -225,7 +230,7 @@ def DPLL(clauses, given_symbols, given_model, UCH, depth=0, verbose=False):
         if P:
             model[P] = value
             symbols.remove(P)
-            if verbose: print(f"\tUCH CASE: Unit Symbol: {P} = {value} -- Depth {depth}\n\n")
+            if verbose: print(f"\tUCH CASE: Unit Symbol: {P} = {value} -- Depth {depth}\n")
             return DPLL(clauses, symbols, model, UCH, depth+1, verbose)
     
     if len(symbols) == 0:
@@ -238,13 +243,13 @@ def DPLL(clauses, given_symbols, given_model, UCH, depth=0, verbose=False):
     
     # Try assigning true to P
     model[P] = True
-    if verbose: print(f"\tTOP CASE 1: Attempting {P} = True -- Depth {depth}")
+    if verbose: print(f"\tCHOICE-POINT TRUE: Attempting {P} = True -- Depth {depth}\n")
     if DPLL(clauses, rest, model, UCH, depth+1, verbose):
         return True
     
     # Try assigning false to P
     model[P] = False
-    if verbose: print(f"\tTOP CASE 2: Attempting {P} = False -- Depth {depth}")
+    if verbose: print(f"\tCHOICE-POINT FALSE: Attempting {P} = False -- Depth {depth}\n")
     if DPLL(clauses, rest, model, UCH, depth+1, verbose):
         return True
     
@@ -254,7 +259,7 @@ if __name__ == "__main__":
     # CONVERSION COMMAND:
     # python3 convCNF.py KBs/<FILENAME>.kb -DIMACS > CNFs/<FILENAME>.cnf
     
-    filename, literals, UCH = parse_args(sys.argv)
+    filename, literals, UCH, verbose = parse_args(sys.argv)
    
     clauses, model = extract_CNF(filename, literals)
     symbols = set()
@@ -262,8 +267,8 @@ if __name__ == "__main__":
         if Bool == None: 
             symbols.add(symbol)
 
-    print('------ MODEL ------')
-    satisfied = DPLL(clauses, symbols, model, UCH, verbose=False)
+    #print('------ MODEL ------')
+    satisfied = DPLL(clauses, symbols, model, UCH, verbose=verbose)
     print('-------------------')
     print(f"SATISFIED: {satisfied}" if satisfied else "Unsatisfiable")
     print(f"NUMBER OF RECURSIONS: {num_recursions}")

@@ -1,0 +1,335 @@
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting NTR = True -- Depth 0
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting VG = True -- Depth 1
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting TB = True -- Depth 2
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting VR = True -- Depth 3
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 4
+	 Violations:
+	 ['-VG', '-VR']
+	  VG = True, VR = True, 
+	 ['-VR', '-VG']
+	  VR = True, VG = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting VR = False -- Depth 3
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting TR = True -- Depth 4
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 5
+	 Violations:
+	 ['-TB', '-TR']
+	  TB = True, TR = True, 
+	 ['-TR', '-TB']
+	  TR = True, TB = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting TR = False -- Depth 4
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting NSWG = True -- Depth 5
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 6
+	 Violations:
+	 ['-VG', '-NSWG']
+	  VG = True, NSWG = True, 
+	 ['-NSWG', '-VG']
+	  NSWG = True, VG = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting NSWG = False -- Depth 5
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting VB = True -- Depth 6
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 7
+	 Violations:
+	 ['-VB', '-VG']
+	  VB = True, VG = True, 
+	 ['-VG', '-VB']
+	  VG = True, VB = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting VB = False -- Depth 6
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting TG = True -- Depth 7
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 8
+	 Violations:
+	 ['-TB', '-TG']
+	  TB = True, TG = True, 
+	 ['-TG', '-TB']
+	  TG = True, TB = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting TG = False -- Depth 7
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting QB = True -- Depth 8
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 9
+	 Violations:
+	 ['VB', '-QB']
+	  VB = False, QB = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting QB = False -- Depth 8
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting QG = True -- Depth 9
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting SAR = True -- Depth 10
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 11
+	 Violations:
+	 ['-NTR', '-SAR']
+	  NTR = True, SAR = True, 
+	 ['-SAR', '-NTR']
+	  SAR = True, NTR = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting SAR = False -- Depth 10
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting NTB = True -- Depth 11
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 12
+	 Violations:
+	 ['-NTB', '-NTR']
+	  NTB = True, NTR = True, 
+	 ['-NTR', '-NTB']
+	  NTR = True, NTB = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting NTB = False -- Depth 11
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting WAG = True -- Depth 12
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting WAR = True -- Depth 13
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 14
+	 Violations:
+	 ['-NTR', '-WAR']
+	  NTR = True, WAR = True, 
+	 ['-WAR', '-NTR']
+	  WAR = True, NTR = True, 
+	 ['-WAG', '-WAR']
+	  WAG = True, WAR = True, 
+	 ['-WAR', '-WAG']
+	  WAR = True, WAG = True, 
+	 ['VR', '-WAR']
+	  VR = False, WAR = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting WAR = False -- Depth 13
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting SAG = True -- Depth 14
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 15
+	 Violations:
+	 ['-SAG', '-WAG']
+	  SAG = True, WAG = True, 
+	 ['-QG', '-SAG']
+	  QG = True, SAG = True, 
+	 ['-VG', '-SAG']
+	  VG = True, SAG = True, 
+	 ['-WAG', '-SAG']
+	  WAG = True, SAG = True, 
+	 ['-SAG', '-QG']
+	  SAG = True, QG = True, 
+	 ['-SAG', '-VG']
+	  SAG = True, VG = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting SAG = False -- Depth 14
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting SAB = True -- Depth 15
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting WAB = True -- Depth 16
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 17
+	 Violations:
+	 ['-SAB', '-WAB']
+	  SAB = True, WAB = True, 
+	 ['-WAB', '-SAB']
+	  WAB = True, SAB = True, 
+	 ['-WAB', '-WAG']
+	  WAB = True, WAG = True, 
+	 ['-WAG', '-WAB']
+	  WAG = True, WAB = True, 
+	 ['QB', '-WAB']
+	  QB = False, WAB = True, 
+	 ['VB', '-WAB']
+	  VB = False, WAB = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting WAB = False -- Depth 16
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting NTG = True -- Depth 17
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 18
+	 Violations:
+	 ['-NTG', '-WAG']
+	  NTG = True, WAG = True, 
+	 ['-QG', '-NTG']
+	  QG = True, NTG = True, 
+	 ['-WAG', '-NTG']
+	  WAG = True, NTG = True, 
+	 ['-NTG', '-QG']
+	  NTG = True, QG = True, 
+	 ['-NTG', '-NTR']
+	  NTG = True, NTR = True, 
+	 ['-NTR', '-NTG']
+	  NTR = True, NTG = True, 
+	 ['-NTG', 'NSWG']
+	  NTG = True, NSWG = False, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting NTG = False -- Depth 17
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting NSWB = True -- Depth 18
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 19
+	 Violations:
+	 ['-NSWB', '-SAB']
+	  NSWB = True, SAB = True, 
+	 ['-SAB', '-NSWB']
+	  SAB = True, NSWB = True, 
+	 ['-NSWB', 'NTB']
+	  NSWB = True, NTB = False, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting NSWB = False -- Depth 18
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting QR = True -- Depth 19
+
+Are all satisfied? False
+Are some false? True
+	-----------------------
+	BASE CASE 2: SOME FALSE -- Depth 20
+	 Violations:
+	 ['-QR', '-NTR']
+	  QR = True, NTR = True, 
+	 ['-NTR', '-QR']
+	  NTR = True, QR = True, 
+	 ['-QG', '-QR']
+	  QG = True, QR = True, 
+	 ['-QR', '-QG']
+	  QR = True, QG = True, 
+	 ['VR', '-QR']
+	  VR = False, QR = True, 
+	 ['WAR', '-QR']
+	  WAR = False, QR = True, 
+	-----------------------
+
+	CHOICE-POINT FALSE: Attempting QR = False -- Depth 19
+
+Are all satisfied? False
+Are some false? False
+	CHOICE-POINT TRUE: Attempting NSWR = True -- Depth 20
+
+Are all satisfied? True
+	BASE CASE 1: ALL TRUE -- Depth 21
+
+------ MODEL ------
+NSWB False
+NSWG False
+NSWR True
+NTB False
+NTG False
+NTR True
+QB False
+QG True
+QR False
+SAB True
+SAG False
+SAR False
+TB True
+TG False
+TR False
+VB False
+VG True
+VR False
+WAB False
+WAG True
+WAR False
+-------------------
+SATISFIED: True
+NUMBER OF RECURSIONS: 36
+-------------------

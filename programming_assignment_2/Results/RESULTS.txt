@@ -1,0 +1,52 @@
+command line inputs:                                        model output:           Calls w/o UCH:          Calls w/ UCH:
+python3 DPLL.py CNFs/mapcolor.cnf                               NSWR                    36                      22
+                                                                NTR
+                                                                QG
+                                                                SAB
+                                                                TB
+                                                                VG
+                                                                WAG
+
+python3 DPLL.py CNFs/mapcolor.cnf QR VG                     unsatisfiable               15                      7
+
+python3 DPLL.py CNFs/sammy.cnf O1Y O2W O3Y L1W L2Y L3B          C1B                     58                      19
+                                                                C2W
+                                                                C3Y
+                                                                L1W
+                                                                L2Y
+                                                                L3B
+                                                                O1Y
+                                                                O2W
+                                                                O3Y
+
+python3 DPLL.py CNFs/sammy.cnf O1W O2Y O3W L1W L2B L3B          C1B                     34                      19
+                                                                C2Y
+                                                                C3W
+                                                                L1W
+                                                                L2B
+                                                                L3B
+                                                                O1W
+                                                                O2Y
+                                                                O3W
+
+python3 DPLL.py CNFs/3Queens.cnf                            unsatisfiable               45                      21
+
+python3 DPLL.py CNFs/4Queens.cnf                                Q13                     51                      17
+                                                                Q21
+                                                                Q34
+                                                                Q42
+
+python3 DPLL.py CNFs/5Queens.cnf                                Q13                     74                      26
+                                                                Q25                     
+                                                                Q32
+                                                                Q44
+                                                                Q51
+
+python3 DPLL.py CNFs/6Queens.cnf                                Q14                     95                      53
+                                                                Q21                     
+                                                                Q35
+                                                                Q42
+                                                                Q56
+                                                                Q63
+
+
