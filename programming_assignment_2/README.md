@@ -32,5 +32,6 @@ The required arguments are:
 
 # ----------- #
 
-In any command, make sure that the <filename> contains the full path from the current working directory to the desired file. For example, if the current working directory is ~/Desktop and the target file is in ~/Desktop/CNFs/
-then the filename argument would look something like "CNFs/example.cnf"
+In any command, make sure that the <filename> contains the full path from the current working directory 
+to the desired file. For example, if the current working directory is ~/Desktop and the target file is 
+in ~/Desktop/CNFs/ then the filename argument would look something like "CNFs/example.cnf"
