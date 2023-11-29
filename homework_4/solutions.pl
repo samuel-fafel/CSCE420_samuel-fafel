@@ -1,3 +1,5 @@
+% Samuel Fafel - 330003077
+% CSCE420-500
 % ------------- Q1 Simpsons -------------
 % Parent definitions
 parent(bart,homer).
