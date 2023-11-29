@@ -1,0 +1,167 @@
+?- consult('HW4/solutions.pl').
+true.
+
+?- brother(rod, X).
+X = tod ;
+false.
+
+?- sister(marge, X).
+X = patty ;
+X = selma ;
+false.
+
+?- aunt(X, patty).
+X = bart ;
+X = lisa ;
+X = maggie ;
+false.
+
+?- uncle(bart, X).
+X = herb ;
+false.
+
+?- grandfather(maggie, X).
+X = abraham ;
+false.
+
+?- granddaughter(jackie, D).
+D = maggie ;
+D = lisa ;
+false.
+
+?- ancestor(bart, X).
+X = homer ;
+X = marge ;
+X = abraham ;
+X = jackie ;
+false.
+
+?- query2c(X).
+X = charlie ;
+X = lisa.
+
+?- query2a(X).
+X = sam ;
+X = bill ;
+X = joan ;
+false.
+
+?- query2a(X).
+X = sam ;
+X = bill ;
+X = joan ;
+false.
+
+?- query2b(X).
+X = lance ;
+false.
+
+?- query2c(X).
+X = charlie ;
+X = lisa.
+
+?- octal_code(A, B, C).
+000
+A = B, B = C, C = 0 ;
+001
+A = B, B = 0,
+C = 1 ;
+010
+A = C, C = 0,
+B = 1 ;
+011
+A = 0,
+B = C, C = 1 ;
+100
+A = 1,
+B = C, C = 0 ;
+101
+A = C, C = 1,
+B = 0 ;
+110
+A = B, B = 1,
+C = 0 ;
+111
+A = B, B = C, C = 1.
+
+?- mapcolor(WA, NT, SA, Q, NSW, V, T).
+WA = Q, Q = V, V = T, T = red,
+NT = NSW, NSW = green,
+SA = blue ;
+WA = Q, Q = V, V = red,
+NT = NSW, NSW = T, T = green,
+SA = blue ;
+WA = Q, Q = V, V = red,
+NT = NSW, NSW = green,
+SA = T, T = blue ;
+WA = Q, Q = V, V = T, T = red,
+NT = NSW, NSW = blue,
+SA = green ;
+WA = Q, Q = V, V = red,
+NT = NSW, NSW = blue,
+SA = T, T = green ;
+WA = Q, Q = V, V = red,
+NT = NSW, NSW = T, T = blue,
+SA = green ;
+WA = Q, Q = V, V = green,
+NT = NSW, NSW = T, T = red,
+SA = blue ;
+WA = Q, Q = V, V = T, T = green,
+NT = NSW, NSW = red,
+SA = blue ;
+WA = Q, Q = V, V = green,
+NT = NSW, NSW = red,
+SA = T, T = blue ;
+WA = Q, Q = V, V = green,
+NT = NSW, NSW = blue,
+SA = T, T = red ;
+WA = Q, Q = V, V = T, T = green,
+NT = NSW, NSW = blue,
+SA = red ;
+WA = Q, Q = V, V = green,
+NT = NSW, NSW = T, T = blue,
+SA = red ;
+WA = Q, Q = V, V = blue,
+NT = NSW, NSW = T, T = red,
+SA = green ;
+WA = Q, Q = V, V = blue,
+NT = NSW, NSW = red,
+SA = T, T = green ;
+WA = Q, Q = V, V = T, T = blue,
+NT = NSW, NSW = red,
+SA = green ;
+WA = Q, Q = V, V = blue,
+NT = NSW, NSW = green,
+SA = T, T = red ;
+WA = Q, Q = V, V = blue,
+NT = NSW, NSW = T, T = green,
+SA = red ;
+WA = Q, Q = V, V = T, T = blue,
+NT = NSW, NSW = green,
+SA = red ;
+false.
+
+?- WA=green, mapcolor(WA, NT, SA, Q, NSW, V, T).
+WA = Q, Q = V, V = green,
+NT = NSW, NSW = T, T = red,
+SA = blue ;
+WA = Q, Q = V, V = T, T = green,
+NT = NSW, NSW = red,
+SA = blue ;
+WA = Q, Q = V, V = green,
+NT = NSW, NSW = red,
+SA = T, T = blue ;
+WA = Q, Q = V, V = green,
+NT = NSW, NSW = blue,
+SA = T, T = red ;
+WA = Q, Q = V, V = T, T = green,
+NT = NSW, NSW = blue,
+SA = red ;
+WA = Q, Q = V, V = green,
+NT = NSW, NSW = T, T = blue,
+SA = red ;
+false.
+
+
+?- WA=red, Q=green, mapcolor(WA, NT, SA, Q, NSW, V, T).
+false.

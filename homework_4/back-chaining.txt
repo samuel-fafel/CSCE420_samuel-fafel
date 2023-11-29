@@ -1,0 +1,16 @@
+Back-Chaining Explanation (Question 4):
+
+1. Prolog starts with the first goal in the rule, which is bit(A).
+
+2. Since bit(0) and bit(1) are both defined (0 being first), Prolog will first bind A to 0, 
+and because of backtracking, it will later bind A to 1.
+
+3. After A is bound to a value, Prolog moves to the next goal, bit(B), and does the same.
+
+4. This continues with C, and once all variables are bound, the format statement is executed to print the octal code.
+
+5. When asking for more solutions, Prolog backtracks to the last successful goal, tries the next possible value (if any), 
+and goes forward again. This process repeats until all possible combinations are exhausted, 
+which is why we see the solutions in the order based on the sequence of the bit facts.
+
+This backtracking mechanism is Prolog's way of exploring all possible combinations of goals to find every solution that satisfies the rule.
